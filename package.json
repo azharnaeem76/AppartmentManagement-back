@@ -2,7 +2,7 @@
   "name": "appartmentmanagement-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development DEBUG=node-server:* nodemon server",
     "staging": "cross-env NODE_ENV=staging DEBUG=node-server:* nodemon server",
