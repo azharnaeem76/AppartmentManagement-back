@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const config = require('../config');
 dotenv.config();
 
-const TOKEN_SECRET = config.JWT.SECRET;
+const TOKEN_SECRET = "asfhn&*#@GEYVO^GF!*!TDOVQW*@#YFVSAD@^O#EF@R@4r^O&@#G*&GWTWFO*^!#DVO@C^@#^RF";
 
 // Middleware for verifying token and role
 const authorizeRoute = (roles = []) => {
