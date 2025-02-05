@@ -1,0 +1,191 @@
+2025-01-15 16:01:03 [31merror[39m: 	[31mSequelizeConnectionError: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:149:20)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorEvent (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:336:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at Client._handleAuthSASLContinue (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:274:23)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 16:01:27 [31merror[39m: 	[31mSequelizeConnectionError: password authentication failed for user "root"[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:145:24)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorMessage (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:346:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at E:\PR\appartmentManagement-backend\node_modules\pg\lib\connection.js:116:12[39m
+[31m    at Parser.parse (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\parser.js:36:17)[39m
+[31m    at Socket.<anonymous> (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\index.js:11:42)[39m
+[31m    at Socket.emit (node:events:517:28)[39m
+[31m    at Socket.emit (node:domain:489:12)[39m
+2025-01-15 16:01:39 [31merror[39m: 	[31mSequelizeConnectionError: password authentication failed for user "Administrator"[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:145:24)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorMessage (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:346:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at E:\PR\appartmentManagement-backend\node_modules\pg\lib\connection.js:116:12[39m
+[31m    at Parser.parse (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\parser.js:36:17)[39m
+[31m    at Socket.<anonymous> (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\index.js:11:42)[39m
+[31m    at Socket.emit (node:events:517:28)[39m
+[31m    at Socket.emit (node:domain:489:12)[39m
+2025-01-15 16:01:48 [31merror[39m: 	[31mSequelizeConnectionError: database "aptx" does not exist[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:145:24)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorMessage (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:346:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at E:\PR\appartmentManagement-backend\node_modules\pg\lib\connection.js:116:12[39m
+[31m    at Parser.parse (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\parser.js:36:17)[39m
+[31m    at Socket.<anonymous> (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\index.js:11:42)[39m
+[31m    at Socket.emit (node:events:517:28)[39m
+[31m    at Socket.emit (node:domain:489:12)[39m
+2025-01-15 16:02:37 [31merror[39m: 	[31mSequelizeConnectionError: database "aptx" does not exist[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:145:24)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorMessage (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:346:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at E:\PR\appartmentManagement-backend\node_modules\pg\lib\connection.js:116:12[39m
+[31m    at Parser.parse (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\parser.js:36:17)[39m
+[31m    at Socket.<anonymous> (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\index.js:11:42)[39m
+[31m    at Socket.emit (node:events:517:28)[39m
+[31m    at Socket.emit (node:domain:489:12)[39m
+2025-01-15 22:15:39 [31merror[39m: 	[31mError connecting to the database: [39m
+2025-01-15 22:35:26 [31merror[39m: 	[31mError connecting to the database: [39m
+2025-01-15 23:00:13 [31merror[39m: 	[31mError connecting to the database: [39m
+2025-01-15 23:00:41 [31merror[39m: 	[31mError connecting to the database: [39m
+2025-01-15 23:01:24 [31merror[39m: 	[31mReferenceError: Superadmin is not defined[39m
+[31m    at E:\PR\appartmentManagement-backend\index.js:37:36[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 23:02:20 [31merror[39m: 	[31mReferenceError: Superadmin is not defined[39m
+[31m    at E:\PR\appartmentManagement-backend\index.js:37:36[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 23:02:28 [31merror[39m: 	[31mReferenceError: Superadmin is not defined[39m
+[31m    at E:\PR\appartmentManagement-backend\index.js:37:36[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 23:02:32 [31merror[39m: 	[31mReferenceError: Superadmin is not defined[39m
+[31m    at E:\PR\appartmentManagement-backend\index.js:37:36[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 23:02:44 [31merror[39m: 	[31mReferenceError: Superadmin is not defined[39m
+[31m    at E:\PR\appartmentManagement-backend\index.js:37:36[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 23:16:29 [31merror[39m: 	[31mResponse Error: 500 for /auth/SuperAdminlogin[39m
+2025-01-15 23:16:38 [31merror[39m: 	[31mResponse Error: 500 for /auth/SuperAdminlogin[39m
+2025-01-15 23:25:00 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:00 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:20 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:20 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:22 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:22 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:33 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:25:33 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:25:52 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:25:52 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:26:02 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:26:02 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:26:40 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:26:40 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:28:26 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:28:26 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:29:09 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:29:09 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:30:09 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:30:09 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:30:38 [31merror[39m: 	[31mResponse Error: 500 for /superAdmin/create-residency[39m
+2025-01-15 23:32:44 [31merror[39m: 	[31mResponse Error: 500 for /superAdmin/create-residency[39m
+2025-01-15 23:33:15 [31merror[39m: 	[31mResponse Error: 500 for /superAdmin/create-residency[39m
+2025-01-15 23:42:50 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:42:50 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:43:09 [31merror[39m: 	[31mResponse Error: 500 for /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:44:16 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency/3/add-admin[39m
+2025-01-15 23:44:22 [31merror[39m: 	[31mResponse Error: 400 for /superAdmin/residency/2/add-admin[39m
+2025-01-19 16:16:09 [31merror[39m: 	[31mReferenceError: bcrypt is not defined[39m
+[31m    at superAdmin.<anonymous> (E:\PR\appartmentManagement-backend\models\SuperAdmin.js:20:20)[39m
+[31m    at superAdmin.runHooks (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\hooks.js:96:18)[39m
+[31m    at model.save (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\model.js:2436:30)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async superAdmin.create (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\model.js:1362:12)[39m
+[31m    at async E:\PR\appartmentManagement-backend\index.js:19:21[39m
+2025-01-19 16:17:01 [31merror[39m: 	[31mReferenceError: bcrypt is not defined[39m
+[31m    at superAdmin.<anonymous> (E:\PR\appartmentManagement-backend\models\SuperAdmin.js:20:20)[39m
+[31m    at superAdmin.runHooks (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\hooks.js:96:18)[39m
+[31m    at model.save (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\model.js:2436:30)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async superAdmin.create (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\model.js:1362:12)[39m
+[31m    at async E:\PR\appartmentManagement-backend\index.js:19:21[39m
+2025-01-19 16:27:04 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:27:04 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:28:12 [31merror[39m: 	[31mResponse Error: 400 for /api/auth/login[39m
+2025-01-19 16:32:46 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:33:13 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:33:38 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:33:50 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:34:35 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:35:32 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:36:02 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:36:54 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:38:01 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:38:29 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:41:39 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 17:07:39 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/create-residency[39m
+2025-01-19 17:07:39 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/create-residency[39m
+2025-01-19 17:07:53 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/create-residency[39m
+2025-01-19 17:07:53 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/create-residency[39m
+2025-01-19 17:08:11 [31merror[39m: 	[31mResponse Error: 404 for /auth/SuperAdminlogin[39m
+2025-01-19 17:08:11 [31merror[39m: 	[31mResponse Error: 404 for /auth/SuperAdminlogin[39m
+2025-01-19 17:08:16 [31merror[39m: 	[31mResponse Error: 404 for /auth/login[39m
+2025-01-19 17:08:16 [31merror[39m: 	[31mResponse Error: 404 for /auth/login[39m
+2025-01-19 17:08:19 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 17:08:59 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/residency/1/add-admin[39m
+2025-01-19 17:08:59 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/residency/1/add-admin[39m
+2025-01-19 17:09:26 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 17:09:47 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 17:10:17 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 18:54:46 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/undefined/add-block[39m
+2025-01-19 18:57:40 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin//residency1[39m
+2025-01-19 18:57:40 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin//residency1[39m
+2025-01-19 18:57:42 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency1[39m
+2025-01-19 18:57:42 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency1[39m
+2025-01-19 18:57:48 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency/1[39m
+2025-01-19 18:57:48 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency/1[39m
+2025-01-19 18:58:17 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:00:17 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:01:21 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/create-residency[39m
+2025-01-19 19:01:21 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/create-residency[39m
+2025-01-19 19:01:27 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/create-residency[39m
+2025-01-19 19:05:57 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:06:21 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:06:22 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:06:23 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:23:38 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:25:01 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:27:59 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:34:35 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 20:23:06 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:06 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:11 [31merror[39m: 	[31mResponse Error: 404 for /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:21 [31merror[39m: 	[31mResponse Error: 404 for /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:45 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 23:40:40 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 23:40:48 [31merror[39m: 	[31mResponse Error: 400 for /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 23:40:51 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 23:40:58 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 23:41:44 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 23:41:51 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 23:49:30 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-02 18:50:22 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-02 18:50:28 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-05 18:28:42 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-05 18:28:49 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-05 18:28:58 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-05 19:29:18 [31merror[39m: 	[31mSequelizeConnectionError: connection is insecure (try using `sslmode=require`)[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:145:24)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorMessage (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:346:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at E:\PR\appartmentManagement-backend\node_modules\pg\lib\connection.js:116:12[39m
+[31m    at Parser.parse (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\parser.js:36:17)[39m
+[31m    at Socket.<anonymous> (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\index.js:11:42)[39m
+[31m    at Socket.emit (node:events:517:28)[39m
+[31m    at Socket.emit (node:domain:489:12)[39m

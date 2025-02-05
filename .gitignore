@@ -27,7 +27,7 @@ yarn-debug.log*
 yarn-error.log*
 
 
-./app/logs
+# ./app/logs
 
-/logs
-*.log
+# /logs
+# *.log

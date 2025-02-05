@@ -1,0 +1,1013 @@
+2025-01-15 16:01:03 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:01:03 [31merror[39m: 	[31mSequelizeConnectionError: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:149:20)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorEvent (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:336:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at Client._handleAuthSASLContinue (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:274:23)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 16:01:27 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:01:27 [31merror[39m: 	[31mSequelizeConnectionError: password authentication failed for user "root"[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:145:24)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorMessage (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:346:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at E:\PR\appartmentManagement-backend\node_modules\pg\lib\connection.js:116:12[39m
+[31m    at Parser.parse (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\parser.js:36:17)[39m
+[31m    at Socket.<anonymous> (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\index.js:11:42)[39m
+[31m    at Socket.emit (node:events:517:28)[39m
+[31m    at Socket.emit (node:domain:489:12)[39m
+2025-01-15 16:01:39 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:01:39 [31merror[39m: 	[31mSequelizeConnectionError: password authentication failed for user "Administrator"[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:145:24)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorMessage (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:346:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at E:\PR\appartmentManagement-backend\node_modules\pg\lib\connection.js:116:12[39m
+[31m    at Parser.parse (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\parser.js:36:17)[39m
+[31m    at Socket.<anonymous> (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\index.js:11:42)[39m
+[31m    at Socket.emit (node:events:517:28)[39m
+[31m    at Socket.emit (node:domain:489:12)[39m
+2025-01-15 16:01:48 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:01:48 [31merror[39m: 	[31mSequelizeConnectionError: database "aptx" does not exist[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:145:24)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorMessage (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:346:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at E:\PR\appartmentManagement-backend\node_modules\pg\lib\connection.js:116:12[39m
+[31m    at Parser.parse (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\parser.js:36:17)[39m
+[31m    at Socket.<anonymous> (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\index.js:11:42)[39m
+[31m    at Socket.emit (node:events:517:28)[39m
+[31m    at Socket.emit (node:domain:489:12)[39m
+2025-01-15 16:02:37 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:02:37 [31merror[39m: 	[31mSequelizeConnectionError: database "aptx" does not exist[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:145:24)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorMessage (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:346:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at E:\PR\appartmentManagement-backend\node_modules\pg\lib\connection.js:116:12[39m
+[31m    at Parser.parse (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\parser.js:36:17)[39m
+[31m    at Socket.<anonymous> (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\index.js:11:42)[39m
+[31m    at Socket.emit (node:events:517:28)[39m
+[31m    at Socket.emit (node:domain:489:12)[39m
+2025-01-15 16:04:36 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:04:36 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 16:06:41 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:06:41 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 16:15:48 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:15:48 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 16:16:43 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:16:43 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 16:17:02 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:17:02 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 16:17:08 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 16:17:08 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 21:40:02 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 21:40:03 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 21:40:17 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 21:40:18 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 21:40:25 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 21:40:25 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:04:23 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:04:23 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:06:23 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:06:23 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:06:33 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:06:33 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:09:32 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:09:32 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:09:50 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:09:51 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:10:40 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:10:40 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:11:18 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:11:18 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:12:05 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:12:05 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:13:23 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:13:24 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:14:06 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:14:06 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:14:13 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:14:13 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:14:18 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:14:19 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 22:15:39 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:15:39 [32minfo[39m: 	[32mDATABASE CONNECTED[39m
+2025-01-15 22:15:39 [31merror[39m: 	[31mError connecting to the database: [39m
+2025-01-15 22:35:25 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 22:35:26 [32minfo[39m: 	[32mDATABASE CONNECTED[39m
+2025-01-15 22:35:26 [31merror[39m: 	[31mError connecting to the database: [39m
+2025-01-15 23:00:12 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:00:13 [32minfo[39m: 	[32mDATABASE CONNECTED[39m
+2025-01-15 23:00:13 [31merror[39m: 	[31mError connecting to the database: [39m
+2025-01-15 23:00:40 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:00:41 [32minfo[39m: 	[32mDATABASE CONNECTED[39m
+2025-01-15 23:00:41 [31merror[39m: 	[31mError connecting to the database: [39m
+2025-01-15 23:00:57 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:00:57 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:01:24 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:01:24 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:01:24 [31merror[39m: 	[31mReferenceError: Superadmin is not defined[39m
+[31m    at E:\PR\appartmentManagement-backend\index.js:37:36[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 23:02:20 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:02:20 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:02:20 [31merror[39m: 	[31mReferenceError: Superadmin is not defined[39m
+[31m    at E:\PR\appartmentManagement-backend\index.js:37:36[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 23:02:28 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:02:28 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:02:28 [31merror[39m: 	[31mReferenceError: Superadmin is not defined[39m
+[31m    at E:\PR\appartmentManagement-backend\index.js:37:36[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 23:02:32 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:02:32 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:02:32 [31merror[39m: 	[31mReferenceError: Superadmin is not defined[39m
+[31m    at E:\PR\appartmentManagement-backend\index.js:37:36[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 23:02:44 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:02:44 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:02:44 [31merror[39m: 	[31mReferenceError: Superadmin is not defined[39m
+[31m    at E:\PR\appartmentManagement-backend\index.js:37:36[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-01-15 23:02:54 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:02:55 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:16:16 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:16:16 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:16:29 [32minfo[39m: 	[32m[POST] /auth/SuperAdminlogin[39m
+2025-01-15 23:16:29 [31merror[39m: 	[31mResponse Error: 500 for /auth/SuperAdminlogin[39m
+2025-01-15 23:16:29 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Server error\",\"error\":\"Illegal arguments: number, string\"}"[39m
+2025-01-15 23:16:37 [32minfo[39m: 	[32m[POST] /auth/SuperAdminlogin[39m
+2025-01-15 23:16:38 [31merror[39m: 	[31mResponse Error: 500 for /auth/SuperAdminlogin[39m
+2025-01-15 23:16:38 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Server error\",\"error\":\"secretOrPrivateKey must have a value\"}"[39m
+2025-01-15 23:18:24 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:18:24 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:18:53 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:18:53 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:19:25 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:19:25 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:19:32 [32minfo[39m: 	[32m[POST] /auth/SuperAdminlogin[39m
+2025-01-15 23:19:32 [32minfo[39m: 	[32mResponse Success: 200 for /auth/SuperAdminlogin[39m
+2025-01-15 23:19:32 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM2OTY1MTcyLCJleHAiOjE3MzcwNTE1NzJ9.NIR9CIm81H-mMSXti-bA5ees3M6wRKeW61r6_IQN6d0\"}"[39m
+2025-01-15 23:25:00 [32minfo[39m: 	[32m[POST] /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:00 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:00 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-15 23:25:00 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:00 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-15 23:25:20 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:25:20 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:25:20 [32minfo[39m: 	[32m[POST] /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:20 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:20 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-15 23:25:20 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:20 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-15 23:25:22 [32minfo[39m: 	[32m[POST] /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:22 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:22 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-15 23:25:22 [31merror[39m: 	[31mResponse Error: 404 for /auth/superAdmin/create-residency[39m
+2025-01-15 23:25:22 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-15 23:25:33 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:25:33 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:25:33 [32minfo[39m: 	[32mResponse Body: {"message":"No token provided!"}[39m
+2025-01-15 23:25:33 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:25:33 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"No token provided!\"}"[39m
+2025-01-15 23:25:52 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:25:52 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:25:52 [32minfo[39m: 	[32mResponse Body: {"message":"No token provided!"}[39m
+2025-01-15 23:25:52 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:25:52 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"No token provided!\"}"[39m
+2025-01-15 23:26:02 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:26:02 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:26:02 [32minfo[39m: 	[32mResponse Body: {"message":"No token provided!"}[39m
+2025-01-15 23:26:02 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:26:02 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"No token provided!\"}"[39m
+2025-01-15 23:26:38 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:26:39 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:26:40 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:26:40 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:26:40 [32minfo[39m: 	[32mResponse Body: {"message":"No token provided!"}[39m
+2025-01-15 23:26:40 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:26:40 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"No token provided!\"}"[39m
+2025-01-15 23:26:46 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:26:46 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:28:26 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:28:26 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:28:26 [32minfo[39m: 	[32mResponse Body: {"message":"Access denied!"}[39m
+2025-01-15 23:28:26 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:28:26 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Access denied!\"}"[39m
+2025-01-15 23:29:05 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:29:06 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:29:09 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:29:09 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:29:09 [32minfo[39m: 	[32mResponse Body: {"message":"Access denied!"}[39m
+2025-01-15 23:29:09 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:29:09 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Access denied!\"}"[39m
+2025-01-15 23:29:52 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:29:53 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:30:02 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:30:02 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:30:05 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:30:06 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:30:09 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:30:09 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:30:09 [32minfo[39m: 	[32mResponse Body: {"message":"Access denied!"}[39m
+2025-01-15 23:30:09 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/create-residency[39m
+2025-01-15 23:30:09 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Access denied!\"}"[39m
+2025-01-15 23:30:17 [32minfo[39m: 	[32m[POST] /auth/SuperAdminlogin[39m
+2025-01-15 23:30:17 [32minfo[39m: 	[32mResponse Success: 200 for /auth/SuperAdminlogin[39m
+2025-01-15 23:30:17 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic3VwZXJBZG1pbiIsImlhdCI6MTczNjk2NTgxNywiZXhwIjoxNzM3MDUyMjE3fQ.5ks4F7N_vjsKuNpJJxbL439NfW1e89vuNdBxFwF9SOM\"}"[39m
+2025-01-15 23:30:38 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:30:38 [31merror[39m: 	[31mResponse Error: 500 for /superAdmin/create-residency[39m
+2025-01-15 23:30:38 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error creating residency\",\"error\":\"Cannot read properties of undefined (reading 'id')\"}"[39m
+2025-01-15 23:32:10 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:32:11 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:32:44 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:32:44 [31merror[39m: 	[31mResponse Error: 500 for /superAdmin/create-residency[39m
+2025-01-15 23:32:44 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error creating residency\",\"error\":\"notNull Violation: residency.created_by cannot be null\"}"[39m
+2025-01-15 23:33:11 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:33:11 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:33:15 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:33:15 [31merror[39m: 	[31mResponse Error: 500 for /superAdmin/create-residency[39m
+2025-01-15 23:33:15 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error creating residency\",\"error\":\"notNull Violation: residency.created_by cannot be null\"}"[39m
+2025-01-15 23:33:47 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:33:47 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:33:58 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:33:59 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:34:05 [32minfo[39m: 	[32m[POST] /auth/SuperAdminlogin[39m
+2025-01-15 23:34:05 [32minfo[39m: 	[32mResponse Success: 200 for /auth/SuperAdminlogin[39m
+2025-01-15 23:34:05 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic3VwZXJBZG1pbiIsImlhdCI6MTczNjk2NjA0NSwiZXhwIjoxNzM3MDUyNDQ1fQ.N_RvKY9ysq04uSX0yVg2tTd7iyUlTorf3BOJE6nj28s\"}"[39m
+2025-01-15 23:34:24 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:34:25 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:34:27 [32minfo[39m: 	[32m[POST] /auth/SuperAdminlogin[39m
+2025-01-15 23:34:27 [32minfo[39m: 	[32mResponse Success: 200 for /auth/SuperAdminlogin[39m
+2025-01-15 23:34:27 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzY5NjYwNjcsImV4cCI6MTczNzA1MjQ2N30.nudjawGaphKuy9cSARP4KwzsYVID-2Y47qFWTfTkEwI\"}"[39m
+2025-01-15 23:34:40 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:34:40 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:34:46 [32minfo[39m: 	[32m[POST] /auth/SuperAdminlogin[39m
+2025-01-15 23:34:47 [32minfo[39m: 	[32mResponse Success: 200 for /auth/SuperAdminlogin[39m
+2025-01-15 23:34:47 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzY5NjYwODcsImV4cCI6MTczNzA1MjQ4N30.7XagNojbqNO4HxmUAM9lF30FNn2G-YAtK_Za6jAlYMs\"}"[39m
+2025-01-15 23:34:54 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:34:54 [32minfo[39m: 	[32mResponse Success: 201 for /superAdmin/create-residency[39m
+2025-01-15 23:34:54 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency created successfully\",\"residency\":{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"updatedAt\":\"2025-01-15T18:34:54.919Z\",\"createdAt\":\"2025-01-15T18:34:54.919Z\"}}"[39m
+2025-01-15 23:35:18 [32minfo[39m: 	[32m[GET] /superAdmin/all-residencies[39m
+2025-01-15 23:35:18 [32minfo[39m: 	[32mResponse Success: 200 for /superAdmin/all-residencies[39m
+2025-01-15 23:35:18 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-15T18:34:54.919Z\",\"updatedAt\":\"2025-01-15T18:34:54.919Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-15 23:35:33 [32minfo[39m: 	[32m[GET] /superAdmin/residency/1[39m
+2025-01-15 23:35:33 [32minfo[39m: 	[32mResponse Success: 200 for /superAdmin/residency/1[39m
+2025-01-15 23:35:33 [32minfo[39m: 	[32mResponse Body: "{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-15T18:34:54.919Z\",\"updatedAt\":\"2025-01-15T18:34:54.919Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}"[39m
+2025-01-15 23:35:44 [32minfo[39m: 	[32m[PUT] /superAdmin/update-residency/1[39m
+2025-01-15 23:35:44 [32minfo[39m: 	[32mResponse Success: 200 for /superAdmin/update-residency/1[39m
+2025-01-15 23:35:44 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency updated successfully\",\"residency\":{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-15T18:34:54.919Z\",\"updatedAt\":\"2025-01-15T18:34:54.919Z\"}}"[39m
+2025-01-15 23:35:56 [32minfo[39m: 	[32m[DELETE] /superAdmin/delete-residency/1[39m
+2025-01-15 23:35:56 [32minfo[39m: 	[32mResponse Success: 200 for /superAdmin/delete-residency/1[39m
+2025-01-15 23:35:56 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency deleted successfully\"}"[39m
+2025-01-15 23:36:05 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-15 23:36:05 [32minfo[39m: 	[32mResponse Success: 201 for /superAdmin/create-residency[39m
+2025-01-15 23:36:05 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency created successfully\",\"residency\":{\"id\":2,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"updatedAt\":\"2025-01-15T18:36:05.401Z\",\"createdAt\":\"2025-01-15T18:36:05.401Z\"}}"[39m
+2025-01-15 23:38:44 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:38:44 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:41:09 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:41:09 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:42:50 [32minfo[39m: 	[32m[POST] /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:42:50 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:42:50 [32minfo[39m: 	[32mResponse Body: {"message":"No token provided!"}[39m
+2025-01-15 23:42:50 [31merror[39m: 	[31mResponse Error: 403 for /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:42:50 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"No token provided!\"}"[39m
+2025-01-15 23:43:09 [32minfo[39m: 	[32m[POST] /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:43:09 [31merror[39m: 	[31mResponse Error: 500 for /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:43:09 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error adding admin to residency\",\"error\":\"bcrypt is not defined\"}"[39m
+2025-01-15 23:43:54 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:43:54 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:44:05 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:44:05 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:44:07 [32minfo[39m: 	[32m[POST] /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:44:07 [32minfo[39m: 	[32mResponse Success: 201 for /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:44:07 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Admin added successfully\",\"admin\":{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2a$10$iMmkoQioU96ptIP7J.Kw7Ov1YfkoO2qx2pTkukE4TEFLyFthe.GsO\",\"residency_id\":2,\"updatedAt\":\"2025-01-15T18:44:07.865Z\",\"createdAt\":\"2025-01-15T18:44:07.865Z\",\"permissions\":null}}"[39m
+2025-01-15 23:44:16 [32minfo[39m: 	[32m[POST] /superAdmin/residency/3/add-admin[39m
+2025-01-15 23:44:16 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency/3/add-admin[39m
+2025-01-15 23:44:16 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency not found or not authorized\"}"[39m
+2025-01-15 23:44:22 [32minfo[39m: 	[32m[POST] /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:44:22 [31merror[39m: 	[31mResponse Error: 400 for /superAdmin/residency/2/add-admin[39m
+2025-01-15 23:44:22 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Admin with this email already exists\"}"[39m
+2025-01-15 23:45:19 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:45:19 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-15 23:45:44 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-15 23:45:44 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 13:54:35 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 13:54:35 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 13:55:07 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 13:55:07 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 13:55:48 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 13:55:48 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 13:55:56 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 13:55:56 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 13:56:09 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 13:56:09 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 13:56:24 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 13:56:24 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 13:56:56 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 13:56:56 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 13:57:08 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 13:57:08 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 13:57:23 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 13:57:23 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 13:57:34 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 13:57:34 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-16 14:27:31 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-16 14:27:31 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 15:48:24 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 15:48:24 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:14:47 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:14:47 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:15:21 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:15:22 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:15:49 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:15:49 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:16:03 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:16:03 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:16:08 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:16:09 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:16:09 [31merror[39m: 	[31mReferenceError: bcrypt is not defined[39m
+[31m    at superAdmin.<anonymous> (E:\PR\appartmentManagement-backend\models\SuperAdmin.js:20:20)[39m
+[31m    at superAdmin.runHooks (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\hooks.js:96:18)[39m
+[31m    at model.save (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\model.js:2436:30)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async superAdmin.create (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\model.js:1362:12)[39m
+[31m    at async E:\PR\appartmentManagement-backend\index.js:19:21[39m
+2025-01-19 16:17:00 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:17:01 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:17:01 [31merror[39m: 	[31mReferenceError: bcrypt is not defined[39m
+[31m    at superAdmin.<anonymous> (E:\PR\appartmentManagement-backend\models\SuperAdmin.js:20:20)[39m
+[31m    at superAdmin.runHooks (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\hooks.js:96:18)[39m
+[31m    at model.save (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\model.js:2436:30)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async superAdmin.create (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\model.js:1362:12)[39m
+[31m    at async E:\PR\appartmentManagement-backend\index.js:19:21[39m
+2025-01-19 16:17:06 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:17:07 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:17:27 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:17:27 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:18:57 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:18:57 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:19:55 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:19:55 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:22:36 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:22:36 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:27:04 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:27:04 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:27:04 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-19 16:27:04 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:27:04 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-19 16:28:04 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:28:04 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:28:12 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:28:12 [31merror[39m: 	[31mResponse Error: 400 for /api/auth/login[39m
+2025-01-19 16:28:12 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid role specified\"}"[39m
+2025-01-19 16:29:36 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:29:36 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:29:41 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:29:41 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:29:41 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODYxODEsImV4cCI6MTczNzM3MjU4MX0.YMmlsWuCmz1_NdhemnEX96VStvz-SLQbjiNDG4hYc38\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:30:18 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:30:18 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:30:18 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODYyMTgsImV4cCI6MTczNzM3MjYxOH0.MeYV9IJnjIzm4fZ3l7xRG-p9ka4gwNTlZ-Yz0wdlftQ\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:31:14 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 16:31:14 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 16:31:32 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:31:32 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:31:32 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODYyOTIsImV4cCI6MTczNzM3MjY5Mn0.Pw72Ou9cdNjWxpJKCFxGYVyhrXrPw46B9YBI0vdCFFI\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:32:46 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:32:46 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:32:46 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:33:13 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:33:13 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:33:13 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:33:38 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:33:38 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:33:38 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:33:50 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:33:50 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:33:50 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:34:11 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:34:11 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:34:11 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODY0NTEsImV4cCI6MTczNzM3Mjg1MX0.nVj-YKw-xz9ZXNQxQKEyRpl04RhVjOG-6Am_MLBqFME\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:34:31 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:34:31 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:34:31 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODY0NzEsImV4cCI6MTczNzM3Mjg3MX0.LSn0mtpYmvF01WDji8tYlMh5hwiME6PEaRUDiqcAwiM\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:34:35 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:34:35 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:34:35 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:35:32 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:35:32 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:35:32 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:36:02 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:36:02 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:36:02 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:36:54 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:36:54 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:36:54 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:37:53 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:37:53 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:37:53 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODY2NzMsImV4cCI6MTczNzM3MzA3M30.186aAt8fuz9XOsi-URT99EwlKJ5dpPrY5RLUCjOlqbI\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:37:56 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:37:56 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:37:57 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODY2NzYsImV4cCI6MTczNzM3MzA3Nn0.8Ny0z2BxB0_MXfSYO-TSsnhT8D0r-bqrLMZZMNGG5YY\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:38:01 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:38:01 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:38:01 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:38:29 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:38:29 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:38:29 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:38:34 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:38:34 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:38:34 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODY3MTQsImV4cCI6MTczNzM3MzExNH0.Ptx7PWtmg5oy4WnY8HMDZMB22mAeUaPyPpoOBNcRnbw\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:39:11 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:39:11 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:39:11 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODY3NTEsImV4cCI6MTczNzM3MzE1MX0.EPABmXKU9eyIPV_cckHnAUZBWicGz4IXjsfR2jJNocY\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:39:27 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:39:28 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:39:28 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODY3NjgsImV4cCI6MTczNzM3MzE2OH0.1e9MUAG1AM3xFSUg1O6cVg6XFF-2G3r6-m4YCmHo7b0\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:39:51 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:39:52 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:39:52 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODY3OTIsImV4cCI6MTczNzM3MzE5Mn0.XskS9x9m-g2OIAO_v4IVqIQkNEd-TcXEQnMqQgwfFR8\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:40:39 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:40:39 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:40:39 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODY4MzksImV4cCI6MTczNzM3MzIzOX0.xR-8j91J-MtaxU-REFiNdD5Pj6_I2oKTCAYVfhUNUFE\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:41:39 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:41:39 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 16:41:39 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 16:41:43 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:41:43 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:41:43 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODY5MDMsImV4cCI6MTczNzM3MzMwM30.HMVbG8RpvieSsG9qc85vnc40ytj3iSQAmryrNgGyygc\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:57:33 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:57:33 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:57:33 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODc4NTMsImV4cCI6MTczNzM3NDI1M30.gyI5Fs-4TU4y_9KjXWleepSc1A9C_FpKFuduijHcuVY\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 16:59:26 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 16:59:26 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 16:59:26 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODc5NjYsImV4cCI6MTczNzM3NDM2Nn0.3cGAVYKYOpf2vjTcuA0boH0-nPZnelNpjCOcvvSkCYw\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 17:07:21 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 17:07:21 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 17:07:26 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 17:07:26 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 17:07:26 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODg0NDYsImV4cCI6MTczNzM3NDg0Nn0.6JBLPciUNDXxcBDi2-wnyGneN-A9cGYeOtUv8JQh9v0\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 17:07:39 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-19 17:07:39 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/create-residency[39m
+2025-01-19 17:07:39 [32minfo[39m: 	[32mResponse Body: {"message":"Unauthorized!"}[39m
+2025-01-19 17:07:39 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/create-residency[39m
+2025-01-19 17:07:39 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Unauthorized!\"}"[39m
+2025-01-19 17:07:53 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-19 17:07:53 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/create-residency[39m
+2025-01-19 17:07:53 [32minfo[39m: 	[32mResponse Body: {"message":"Unauthorized!"}[39m
+2025-01-19 17:07:53 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/create-residency[39m
+2025-01-19 17:07:53 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Unauthorized!\"}"[39m
+2025-01-19 17:08:11 [32minfo[39m: 	[32m[POST] /auth/SuperAdminlogin[39m
+2025-01-19 17:08:11 [31merror[39m: 	[31mResponse Error: 404 for /auth/SuperAdminlogin[39m
+2025-01-19 17:08:11 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-19 17:08:11 [31merror[39m: 	[31mResponse Error: 404 for /auth/SuperAdminlogin[39m
+2025-01-19 17:08:11 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-19 17:08:16 [32minfo[39m: 	[32m[POST] /auth/login[39m
+2025-01-19 17:08:16 [31merror[39m: 	[31mResponse Error: 404 for /auth/login[39m
+2025-01-19 17:08:16 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-19 17:08:16 [31merror[39m: 	[31mResponse Error: 404 for /auth/login[39m
+2025-01-19 17:08:16 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-19 17:08:19 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 17:08:19 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 17:08:19 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-01-19 17:08:25 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 17:08:25 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 17:08:25 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODg1MDUsImV4cCI6MTczNzM3NDkwNX0.VnhXoBkXir1kGUyAFgn-3TjfL9pHi-2VC2Ywrh4FX0s\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 17:08:35 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-19 17:08:35 [32minfo[39m: 	[32mResponse Success: 201 for /superAdmin/create-residency[39m
+2025-01-19 17:08:35 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency created successfully\",\"residency\":{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"updatedAt\":\"2025-01-19T12:08:35.660Z\",\"createdAt\":\"2025-01-19T12:08:35.660Z\"}}"[39m
+2025-01-19 17:08:59 [32minfo[39m: 	[32m[POST] /superAdmin/residency/1/add-admin[39m
+2025-01-19 17:08:59 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/residency/1/add-admin[39m
+2025-01-19 17:08:59 [32minfo[39m: 	[32mResponse Body: {"message":"Unauthorized!"}[39m
+2025-01-19 17:08:59 [31merror[39m: 	[31mResponse Error: 401 for /superAdmin/residency/1/add-admin[39m
+2025-01-19 17:08:59 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Unauthorized!\"}"[39m
+2025-01-19 17:09:07 [32minfo[39m: 	[32m[POST] /superAdmin/residency/1/add-admin[39m
+2025-01-19 17:09:07 [32minfo[39m: 	[32mResponse Success: 201 for /superAdmin/residency/1/add-admin[39m
+2025-01-19 17:09:07 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Admin added successfully\",\"admin\":{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$6UgMp6rAKV0Jtzf.BWrc.u3r5ykxhkqUz5toaTv1S6CyN8gRAVvgy\",\"residency_id\":1,\"updatedAt\":\"2025-01-19T12:09:07.567Z\",\"createdAt\":\"2025-01-19T12:09:07.567Z\",\"permissions\":null}}"[39m
+2025-01-19 17:09:26 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 17:09:26 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 17:09:26 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-01-19 17:09:47 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 17:09:47 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 17:09:47 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-01-19 17:10:17 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 17:10:17 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 17:10:17 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-01-19 17:11:06 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 17:11:07 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 17:11:11 [32minfo[39m: 	[32m[POST] /superAdmin/residency/1/add-admin[39m
+2025-01-19 17:11:11 [32minfo[39m: 	[32mResponse Success: 201 for /superAdmin/residency/1/add-admin[39m
+2025-01-19 17:11:11 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Admin added successfully\",\"admin\":{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"residency_id\":1,\"updatedAt\":\"2025-01-19T12:11:11.269Z\",\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"permissions\":null}}"[39m
+2025-01-19 17:11:21 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 17:11:22 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 17:11:22 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM3Mjg4NjgyLCJleHAiOjE3MzczNzUwODJ9.J3L2godspZqz4IT20ayxLcIFbupAmvZXEUHB14aStU0\",\"role\":\"admin\",\"user\":{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\"}}"[39m
+2025-01-19 17:11:36 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 17:11:36 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 17:11:36 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyODg2OTYsImV4cCI6MTczNzM3NTA5Nn0.K5MYpDb_eF_tHoUks-ctLIs0HnMyiMFULCfmXs8d4u0\",\"role\":\"superAdmin\",\"user\":{\"id\":2,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 17:54:50 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 17:54:50 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 17:58:18 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 17:58:18 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 17:58:18 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 17:58:18 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T12:08:35.660Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 17:58:18 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 17:58:18 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T12:08:35.660Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:00:23 [32minfo[39m: 	[32m[PUT] /api/superAdmin/update-residency/1[39m
+2025-01-19 18:00:23 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/update-residency/1[39m
+2025-01-19 18:00:23 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency updated successfully\",\"residency\":{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\"}}"[39m
+2025-01-19 18:00:26 [32minfo[39m: 	[32m[PUT] /api/superAdmin/update-residency/1[39m
+2025-01-19 18:00:26 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/update-residency/1[39m
+2025-01-19 18:00:26 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency updated successfully\",\"residency\":{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\"}}"[39m
+2025-01-19 18:01:07 [32minfo[39m: 	[32m[POST] /api/superAdmin/create-residency[39m
+2025-01-19 18:01:07 [32minfo[39m: 	[32mResponse Success: 201 for /api/superAdmin/create-residency[39m
+2025-01-19 18:01:07 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency created successfully\",\"residency\":{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"createdAt\":\"2025-01-19T13:01:07.905Z\"}}"[39m
+2025-01-19 18:02:44 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:02:44 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:02:44 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:02:59 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:02:59 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:02:59 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:02:59 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:02:59 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:02:59 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:04:01 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:04:01 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:04:01 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:04:01 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:04:01 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:04:01 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:05:50 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:05:50 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:05:50 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:05:50 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:05:51 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:05:51 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:08:05 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:08:05 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:08:05 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:08:19 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:08:19 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:08:19 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:08:19 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:08:19 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:08:19 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:09:10 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:09:10 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:09:10 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:09:10 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:09:10 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:09:10 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:13:22 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:13:22 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:13:22 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:14:32 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:14:32 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:14:32 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:14:32 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:14:32 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:14:32 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:15:32 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:15:32 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:15:32 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:17:03 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:17:03 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:17:03 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:17:03 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:17:03 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:17:03 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:17:47 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:17:47 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:17:47 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:17:51 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:17:51 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:17:51 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:17:51 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:17:51 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:17:51 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:18:53 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:18:53 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:18:53 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:18:53 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:18:53 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:18:53 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:18:56 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:18:56 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:18:56 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:18:56 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:18:56 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:18:56 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:20:25 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:25 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:25 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:20:25 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:25 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:25 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:20:34 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:34 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:34 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:20:34 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:34 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:34 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:20:43 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:43 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:43 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:43 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:20:43 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:20:43 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:22:54 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:22:54 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:22:54 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:22:54 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:22:54 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:22:54 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:23:59 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:23:59 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:23:59 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:23:59 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:23:59 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:23:59 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:30:32 [32minfo[39m: 	[32m[POST] /api/superAdmin/create-residency[39m
+2025-01-19 18:30:32 [32minfo[39m: 	[32mResponse Success: 201 for /api/superAdmin/create-residency[39m
+2025-01-19 18:30:32 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency created successfully\",\"residency\":{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"createdAt\":\"2025-01-19T13:30:32.933Z\"}}"[39m
+2025-01-19 18:31:15 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:31:15 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:31:15 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:31:15 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:31:15 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:31:15 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:32:41 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:32:41 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:32:41 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:32:41 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:32:41 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:32:41 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:34:29 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:34:29 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:34:29 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:34:29 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:34:29 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:34:29 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"New Residency\",\"country\":\"Country X\",\"state\":\"State Y\",\"address\":\"Address Z\",\"location\":\"Location A\",\"total_units\":100,\"amenities\":\"Gym, Pool\",\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":500,\"description\":\"A beautiful residency.\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:01:07.905Z\",\"updatedAt\":\"2025-01-19T13:01:07.905Z\",\"admins\":[],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:37:21 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:37:21 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:37:21 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:37:21 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:37:21 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:37:21 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:40:58 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:40:58 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:40:58 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:40:58 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:40:58 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:40:58 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:48:38 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:48:38 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:48:38 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:48:38 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:48:38 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:48:38 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:54:36 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:54:36 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:54:36 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:54:36 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 18:54:36 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 18:54:36 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Updated Residency Name\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":2,\"createdAt\":\"2025-01-19T12:08:35.660Z\",\"updatedAt\":\"2025-01-19T13:00:23.507Z\",\"admins\":[{\"id\":2,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$dV6m5rqYNVAB2r8UsxRG5exj5bwFAYujzSJ3dT6QVsyd.OgZH.9ti\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T12:11:11.269Z\",\"updatedAt\":\"2025-01-19T12:11:11.269Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":3,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"dcoer\",\"location\":\"Gulshan\",\"total_units\":50,\"amenities\":[\"Gym\"],\"established_date\":\"2025-01-13T00:00:00.000Z\",\"maintenance_rate\":6000,\"description\":\"testing\",\"created_by\":2,\"createdAt\":\"2025-01-19T13:30:32.933Z\",\"updatedAt\":\"2025-01-19T13:30:32.933Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 18:54:46 [32minfo[39m: 	[32m[POST] /api/superAdmin/residency/undefined/add-block[39m
+2025-01-19 18:54:46 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/undefined/add-block[39m
+2025-01-19 18:54:46 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error adding block\",\"error\":\"invalid input syntax for type integer: \\\"undefined\\\"\"}"[39m
+2025-01-19 18:57:09 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 18:57:09 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 18:57:21 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 18:57:21 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 18:57:40 [32minfo[39m: 	[32m[GET] /superAdmin//residency1[39m
+2025-01-19 18:57:40 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin//residency1[39m
+2025-01-19 18:57:40 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-19 18:57:40 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin//residency1[39m
+2025-01-19 18:57:40 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-19 18:57:42 [32minfo[39m: 	[32m[GET] /superAdmin/residency1[39m
+2025-01-19 18:57:42 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency1[39m
+2025-01-19 18:57:42 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-19 18:57:42 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency1[39m
+2025-01-19 18:57:42 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-19 18:57:48 [32minfo[39m: 	[32m[GET] /superAdmin/residency/1[39m
+2025-01-19 18:57:48 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency/1[39m
+2025-01-19 18:57:48 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-19 18:57:48 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency/1[39m
+2025-01-19 18:57:48 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-19 18:58:17 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 18:58:17 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 18:58:17 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error fetching residency\",\"error\":\"unionMember is not associated to residency!\"}"[39m
+2025-01-19 19:00:12 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:00:12 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:00:17 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:00:17 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:00:17 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error fetching residency\",\"error\":\"unionMember is not associated to residency!\"}"[39m
+2025-01-19 19:00:52 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:00:52 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:01:05 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:01:05 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:01:08 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:01:08 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:01:10 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 19:01:10 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 19:01:10 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 19:01:10 [32minfo[39m: 	[32mResponse Body: "[]"[39m
+2025-01-19 19:01:10 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 19:01:10 [32minfo[39m: 	[32mResponse Body: "[]"[39m
+2025-01-19 19:01:21 [32minfo[39m: 	[32m[POST] /superAdmin/create-residency[39m
+2025-01-19 19:01:21 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/create-residency[39m
+2025-01-19 19:01:21 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-19 19:01:21 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/create-residency[39m
+2025-01-19 19:01:21 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-19 19:01:27 [32minfo[39m: 	[32m[POST] /api/superAdmin/create-residency[39m
+2025-01-19 19:01:27 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/create-residency[39m
+2025-01-19 19:01:27 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error creating residency\",\"error\":\"insert or update on table \\\"residencies\\\" violates foreign key constraint \\\"residencies_created_by_fkey\\\"\"}"[39m
+2025-01-19 19:02:00 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:02:00 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:02:10 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:02:10 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:02:44 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:02:44 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:02:47 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 19:02:47 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 19:02:47 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyOTUzNjcsImV4cCI6MTczNzM4MTc2N30.mSYS0mfY-TRaMTsTC4a58VryTlPCgo4L1r6j6MTdNYA\",\"role\":\"superAdmin\",\"user\":{\"id\":1,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 19:02:59 [32minfo[39m: 	[32m[POST] /api/superAdmin/create-residency[39m
+2025-01-19 19:02:59 [32minfo[39m: 	[32mResponse Success: 201 for /api/superAdmin/create-residency[39m
+2025-01-19 19:02:59 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency created successfully\",\"residency\":{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"createdAt\":\"2025-01-19T14:02:59.172Z\"}}"[39m
+2025-01-19 19:03:13 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:13 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:13 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:13 [32minfo[39m: 	[32mResponse Body: "[]"[39m
+2025-01-19 19:03:13 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:13 [32minfo[39m: 	[32mResponse Body: "[]"[39m
+2025-01-19 19:03:19 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:19 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:19 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:19 [32minfo[39m: 	[32mResponse Body: "[]"[39m
+2025-01-19 19:03:19 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:19 [32minfo[39m: 	[32mResponse Body: "[]"[39m
+2025-01-19 19:03:52 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 19:03:52 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 19:03:52 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzcyOTU0MzIsImV4cCI6MTczNzM4MTgzMn0.MihLlxnHOYb5YUtUBiISwnkdGbMdIW-aU9-phoMTJ4c\",\"role\":\"superAdmin\",\"user\":{\"id\":1,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 19:03:54 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:54 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:54 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 19:03:54 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:54 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 19:03:54 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 19:05:57 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:05:57 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:05:57 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error fetching residency\",\"error\":\"unionMember is associated to residency using an alias. You've included an alias (UnionMember), but it does not match the alias(es) defined in your association (unionMembers).\"}"[39m
+2025-01-19 19:06:20 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:06:20 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:06:21 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:06:21 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:06:21 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error fetching residency\",\"error\":\"unionMember is associated to residency using an alias. You've included an alias (unionMember), but it does not match the alias(es) defined in your association (unionMembers).\"}"[39m
+2025-01-19 19:06:22 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:06:22 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:06:22 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error fetching residency\",\"error\":\"unionMember is associated to residency using an alias. You've included an alias (unionMember), but it does not match the alias(es) defined in your association (unionMembers).\"}"[39m
+2025-01-19 19:06:23 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:06:23 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:06:23 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error fetching residency\",\"error\":\"unionMember is associated to residency using an alias. You've included an alias (unionMember), but it does not match the alias(es) defined in your association (unionMembers).\"}"[39m
+2025-01-19 19:06:42 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:06:42 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:06:43 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:06:43 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/residency/1[39m
+2025-01-19 19:06:43 [32minfo[39m: 	[32mResponse Body: "{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[],\"unionMembers\":[]}"[39m
+2025-01-19 19:18:52 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 19:18:52 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 19:18:52 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 19:18:52 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 19:18:52 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 19:18:52 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 19:23:36 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:23:36 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:23:38 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:23:38 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:23:38 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error fetching residency\",\"error\":\"column house.name does not exist\"}"[39m
+2025-01-19 19:23:52 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:23:53 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:23:55 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:23:55 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/residency/1[39m
+2025-01-19 19:23:55 [32minfo[39m: 	[32mResponse Body: "{\"residency\":{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[],\"unionMembers\":[]},\"residents\":[]}"[39m
+2025-01-19 19:25:00 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:25:00 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:25:01 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:25:01 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:25:01 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error fetching residency\",\"error\":\"resident is not associated to residency!\"}"[39m
+2025-01-19 19:27:56 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:27:56 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:27:59 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:27:59 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:27:59 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error fetching residency\",\"error\":\"Converting circular structure to JSON\\n    --> starting at object with constructor 'Array'\\n    |     index 0 -> object with constructor 'Object'\\n    |     property 'parent' -> object with constructor 'Object'\\n    --- property 'include' closes the circle\"}"[39m
+2025-01-19 19:28:04 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:28:04 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:28:04 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/residency/1[39m
+2025-01-19 19:28:04 [32minfo[39m: 	[32mResponse Body: "{\"residency\":{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[],\"unionMembers\":[]},\"residents\":[]}"[39m
+2025-01-19 19:28:05 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:28:57 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:28:57 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:29:11 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:29:11 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/residency/1[39m
+2025-01-19 19:29:11 [32minfo[39m: 	[32mResponse Body: "{\"residency\":{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[],\"unionMembers\":[]}}"[39m
+2025-01-19 19:30:42 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:30:42 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:30:50 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:30:50 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:34:35 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:34:35 [31merror[39m: 	[31mResponse Error: 500 for /api/superAdmin/residency/1[39m
+2025-01-19 19:34:35 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Error fetching residency\",\"error\":\"column flat.residency_id does not exist\"}"[39m
+2025-01-19 19:45:20 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:45:20 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:52:17 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:52:17 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:52:18 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 19:52:19 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 19:52:20 [32minfo[39m: 	[32m[GET] /api/superAdmin/residency/1[39m
+2025-01-19 19:52:20 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/residency/1[39m
+2025-01-19 19:52:20 [32minfo[39m: 	[32mResponse Body: "{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[],\"unionMembers\":[],\"residents\":[]}"[39m
+2025-01-19 20:00:12 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 20:00:12 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 20:00:12 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 20:00:12 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 20:00:12 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 20:00:12 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 20:01:46 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 20:01:47 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 20:05:24 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 20:05:24 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 20:22:26 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:26 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:26 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:26 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 20:22:26 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:26 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 20:22:42 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 20:22:42 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 20:22:42 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzczMDAxNjIsImV4cCI6MTczNzM4NjU2Mn0.mH4PrpY6pNHPmb8YYJ4isItmoV3I6K79fGNnyHVOe9s\",\"role\":\"superAdmin\",\"user\":{\"id\":1,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 20:22:43 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:43 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:43 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:43 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 20:22:43 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:43 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 20:22:51 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:51 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:51 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:51 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 20:22:51 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 20:22:51 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 20:23:06 [32minfo[39m: 	[32m[POST] /superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:06 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:06 [32minfo[39m: 	[32mResponse Body: {"message":"route not found","sucess":false}[39m
+2025-01-19 20:23:06 [31merror[39m: 	[31mResponse Error: 404 for /superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:06 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"route not found\",\"sucess\":false}"[39m
+2025-01-19 20:23:11 [32minfo[39m: 	[32m[POST] /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:11 [31merror[39m: 	[31mResponse Error: 404 for /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:11 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency not found or not authorized\"}"[39m
+2025-01-19 20:23:21 [32minfo[39m: 	[32m[POST] /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:21 [31merror[39m: 	[31mResponse Error: 404 for /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:21 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency not found or not authorized\"}"[39m
+2025-01-19 20:23:41 [32minfo[39m: 	[32m[POST] /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:41 [32minfo[39m: 	[32mResponse Success: 201 for /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 20:23:41 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Admin added successfully\",\"admin\":{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$wfSPZt0C4yYRlXjfnzRZI.yFSQigbK7VZx3NbJJQBKAgmQMvJuFIq\",\"residency_id\":1,\"updatedAt\":\"2025-01-19T15:23:41.181Z\",\"createdAt\":\"2025-01-19T15:23:41.181Z\",\"permissions\":null}}"[39m
+2025-01-19 20:23:45 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 20:23:45 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 20:23:45 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-01-19 20:23:56 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 20:23:56 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 20:23:56 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM3MzAwMjM2LCJleHAiOjE3MzczODY2MzZ9.pTX363VGd_jYwYqz9OEgfvT_jFXkSJcxIURlWEhgscY\",\"role\":\"admin\",\"user\":{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\"}}"[39m
+2025-01-19 23:29:38 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:29:38 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 23:29:38 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzczMTEzNzgsImV4cCI6MTczNzM5Nzc3OH0.Gc00HwpRUNQbY49LTNBW2nRG2vqs8sxn2tnveX_OIQo\",\"role\":\"superAdmin\",\"user\":{\"id\":1,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 23:29:40 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 23:29:40 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 23:29:40 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$wfSPZt0C4yYRlXjfnzRZI.yFSQigbK7VZx3NbJJQBKAgmQMvJuFIq\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T15:23:41.181Z\",\"updatedAt\":\"2025-01-19T15:23:41.181Z\"}],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 23:29:40 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 23:29:40 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 23:29:40 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$wfSPZt0C4yYRlXjfnzRZI.yFSQigbK7VZx3NbJJQBKAgmQMvJuFIq\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T15:23:41.181Z\",\"updatedAt\":\"2025-01-19T15:23:41.181Z\"}],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 23:30:39 [32minfo[39m: 	[32m[POST] /api/superAdmin/create-residency[39m
+2025-01-19 23:30:39 [32minfo[39m: 	[32mResponse Success: 201 for /api/superAdmin/create-residency[39m
+2025-01-19 23:30:39 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Residency created successfully\",\"residency\":{\"id\":2,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"karachi\",\"location\":\"Pak\",\"total_units\":50,\"amenities\":[\"Pool\",\"Gym\",\"Park\"],\"established_date\":\"2024-12-31T00:00:00.000Z\",\"maintenance_rate\":60000,\"description\":\"testing\",\"created_by\":1,\"updatedAt\":\"2025-01-19T18:30:39.855Z\",\"createdAt\":\"2025-01-19T18:30:39.855Z\"}}"[39m
+2025-01-19 23:35:54 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:35:54 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 23:35:54 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzczMTE3NTQsImV4cCI6MTczNzM5ODE1NH0.tiddl4d_ViII-tHww1-kbTYxI7JsTEUULMZ4YV-z5IE\",\"role\":\"superAdmin\",\"user\":{\"id\":1,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 23:40:40 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:40:40 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 23:40:40 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 23:40:48 [32minfo[39m: 	[32m[POST] /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 23:40:48 [31merror[39m: 	[31mResponse Error: 400 for /api/superAdmin/residency/1/add-admin[39m
+2025-01-19 23:40:48 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Admin with this email already exists\"}"[39m
+2025-01-19 23:40:51 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:40:51 [31merror[39m: 	[31mResponse Error: 404 for /api/auth/login[39m
+2025-01-19 23:40:51 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"User not found!\"}"[39m
+2025-01-19 23:40:58 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:40:58 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 23:40:58 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-01-19 23:41:38 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:41:38 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 23:41:38 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM3MzEyMDk4LCJleHAiOjE3MzczOTg0OTh9.FLuna6AwIBhtT9_zr3vZWCOFZHmRdsVrQZnpMzTT0YA\",\"role\":\"admin\",\"user\":{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\"}}"[39m
+2025-01-19 23:41:44 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:41:44 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 23:41:44 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-01-19 23:41:51 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:41:51 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 23:41:51 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-01-19 23:42:02 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:42:03 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 23:42:03 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM3MzEyMTIzLCJleHAiOjE3MzczOTg1MjN9.fMBYam1O7YNtQLKK474uM4kYvxMn7TaFSmBWXc6aEdY\",\"role\":\"admin\",\"user\":{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\"}}"[39m
+2025-01-19 23:42:13 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:42:13 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 23:42:13 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzczMTIxMzMsImV4cCI6MTczNzM5ODUzM30.d_R8_uIXeYMhj2pzzkbMv4S32RJsKeavNJ-zJ3wgnmA\",\"role\":\"superAdmin\",\"user\":{\"id\":1,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 23:45:51 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-01-19 23:45:52 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-01-19 23:49:30 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:49:30 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-01-19 23:49:30 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-01-19 23:49:36 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:49:36 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 23:49:36 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM3MzEyNTc2LCJleHAiOjE3MzczOTg5NzZ9._gdBseV1srWN69lLB-OGOQ5Aaz2bygCCU_9aCNy6ADk\",\"role\":\"admin\",\"user\":{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\"}}"[39m
+2025-01-19 23:52:02 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:52:02 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 23:52:02 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzczMTI3MjIsImV4cCI6MTczNzM5OTEyMn0.dEVha2pXX0TakqBnGnstiWQzmTRxCSJ9RaG5oRx0lko\",\"role\":\"superAdmin\",\"user\":{\"id\":1,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-01-19 23:52:03 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 23:52:03 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-01-19 23:52:03 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 23:52:03 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$wfSPZt0C4yYRlXjfnzRZI.yFSQigbK7VZx3NbJJQBKAgmQMvJuFIq\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T15:23:41.181Z\",\"updatedAt\":\"2025-01-19T15:23:41.181Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"karachi\",\"location\":\"Pak\",\"total_units\":50,\"amenities\":[\"Pool\",\"Gym\",\"Park\"],\"established_date\":\"2024-12-31T00:00:00.000Z\",\"maintenance_rate\":60000,\"description\":\"testing\",\"created_by\":1,\"createdAt\":\"2025-01-19T18:30:39.855Z\",\"updatedAt\":\"2025-01-19T18:30:39.855Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 23:52:03 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-01-19 23:52:03 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$wfSPZt0C4yYRlXjfnzRZI.yFSQigbK7VZx3NbJJQBKAgmQMvJuFIq\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T15:23:41.181Z\",\"updatedAt\":\"2025-01-19T15:23:41.181Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"karachi\",\"location\":\"Pak\",\"total_units\":50,\"amenities\":[\"Pool\",\"Gym\",\"Park\"],\"established_date\":\"2024-12-31T00:00:00.000Z\",\"maintenance_rate\":60000,\"description\":\"testing\",\"created_by\":1,\"createdAt\":\"2025-01-19T18:30:39.855Z\",\"updatedAt\":\"2025-01-19T18:30:39.855Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-01-19 23:54:39 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-01-19 23:54:39 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-01-19 23:54:39 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3MzczMTI4NzksImV4cCI6MTczNzM5OTI3OX0.xN3vWWUOjO1OwBSEPzrijnqfWJ_K8YC-7XA10o0LbyA\",\"role\":\"superAdmin\",\"user\":{\"id\":1,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-02-02 01:22:07 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-02-02 01:22:07 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-02-02 18:45:06 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-02-02 18:45:06 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-02-02 18:48:22 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-02-02 18:48:22 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-02-02 18:48:22 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3Mzg1MDQxMDIsImV4cCI6MTczODU5MDUwMn0.SLSItIBkPedy-aNKWw2ssu_jR67FVojU5LSbEsHD6_0\",\"role\":\"superAdmin\",\"user\":{\"id\":1,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-02-02 18:48:26 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-02-02 18:48:26 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-02-02 18:48:26 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-02-02 18:48:26 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$wfSPZt0C4yYRlXjfnzRZI.yFSQigbK7VZx3NbJJQBKAgmQMvJuFIq\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T15:23:41.181Z\",\"updatedAt\":\"2025-01-19T15:23:41.181Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"karachi\",\"location\":\"Pak\",\"total_units\":50,\"amenities\":[\"Pool\",\"Gym\",\"Park\"],\"established_date\":\"2024-12-31T00:00:00.000Z\",\"maintenance_rate\":60000,\"description\":\"testing\",\"created_by\":1,\"createdAt\":\"2025-01-19T18:30:39.855Z\",\"updatedAt\":\"2025-01-19T18:30:39.855Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-02-02 18:48:26 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-02-02 18:48:26 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$wfSPZt0C4yYRlXjfnzRZI.yFSQigbK7VZx3NbJJQBKAgmQMvJuFIq\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T15:23:41.181Z\",\"updatedAt\":\"2025-01-19T15:23:41.181Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"karachi\",\"location\":\"Pak\",\"total_units\":50,\"amenities\":[\"Pool\",\"Gym\",\"Park\"],\"established_date\":\"2024-12-31T00:00:00.000Z\",\"maintenance_rate\":60000,\"description\":\"testing\",\"created_by\":1,\"createdAt\":\"2025-01-19T18:30:39.855Z\",\"updatedAt\":\"2025-01-19T18:30:39.855Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-02-02 18:50:21 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-02-02 18:50:22 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-02 18:50:22 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-02-02 18:50:28 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-02-02 18:50:28 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-02 18:50:28 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-02-02 18:50:37 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-02-02 18:50:37 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-02-02 18:50:37 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4NTA0MjM3LCJleHAiOjE3Mzg1OTA2Mzd9.S1HRU2sWHpHirqBjKUX7M_k8qIK9MaANib3KnexEpzo\",\"role\":\"admin\",\"user\":{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\"}}"[39m
+2025-02-02 19:01:44 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-02-02 19:01:44 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-02-02 19:11:31 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-02-02 19:11:31 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-02-02 19:11:31 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyQWRtaW4iLCJpYXQiOjE3Mzg1MDU0OTEsImV4cCI6MTczODU5MTg5MX0.INmvpTWF6TrHH0dCzX7BAvoKmu56AXNPrrUmDT6xsCM\",\"role\":\"superAdmin\",\"user\":{\"id\":1,\"name\":\"Super Admin\",\"email\":\"superadmin@apptx.com\"}}"[39m
+2025-02-02 19:11:37 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-02-02 19:11:37 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-02-02 19:11:37 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$wfSPZt0C4yYRlXjfnzRZI.yFSQigbK7VZx3NbJJQBKAgmQMvJuFIq\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T15:23:41.181Z\",\"updatedAt\":\"2025-01-19T15:23:41.181Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"karachi\",\"location\":\"Pak\",\"total_units\":50,\"amenities\":[\"Pool\",\"Gym\",\"Park\"],\"established_date\":\"2024-12-31T00:00:00.000Z\",\"maintenance_rate\":60000,\"description\":\"testing\",\"created_by\":1,\"createdAt\":\"2025-01-19T18:30:39.855Z\",\"updatedAt\":\"2025-01-19T18:30:39.855Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-02-02 19:11:37 [32minfo[39m: 	[32m[GET] /api/superAdmin/all-residencies[39m
+2025-02-02 19:11:37 [32minfo[39m: 	[32mResponse Success: 200 for /api/superAdmin/all-residencies[39m
+2025-02-02 19:11:37 [32minfo[39m: 	[32mResponse Body: "[{\"id\":1,\"name\":\"Sunset Residency\",\"country\":\"USA\",\"state\":\"California\",\"address\":\"123 Sunset Blvd, Los Angeles, CA\",\"location\":\"Near the beach\",\"total_units\":100,\"amenities\":[\"Pool\",\"Gym\",\"Clubhouse\",\"Park\"],\"established_date\":\"2025-01-01T00:00:00.000Z\",\"maintenance_rate\":75.5,\"description\":\"A premium residency located by the beach, offering state-of-the-art amenities.\",\"created_by\":1,\"createdAt\":\"2025-01-19T14:02:59.172Z\",\"updatedAt\":\"2025-01-19T14:02:59.172Z\",\"admins\":[{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\",\"password\":\"$2b$10$wfSPZt0C4yYRlXjfnzRZI.yFSQigbK7VZx3NbJJQBKAgmQMvJuFIq\",\"permissions\":null,\"residency_id\":1,\"createdAt\":\"2025-01-19T15:23:41.181Z\",\"updatedAt\":\"2025-01-19T15:23:41.181Z\"}],\"blocks\":[],\"houses\":[]},{\"id\":2,\"name\":\"test\",\"country\":\"Pakistan\",\"state\":\"Sindh\",\"address\":\"karachi\",\"location\":\"Pak\",\"total_units\":50,\"amenities\":[\"Pool\",\"Gym\",\"Park\"],\"established_date\":\"2024-12-31T00:00:00.000Z\",\"maintenance_rate\":60000,\"description\":\"testing\",\"created_by\":1,\"createdAt\":\"2025-01-19T18:30:39.855Z\",\"updatedAt\":\"2025-01-19T18:30:39.855Z\",\"admins\":[],\"blocks\":[],\"houses\":[]}]"[39m
+2025-02-02 19:20:14 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-02-02 19:20:14 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-02-05 18:19:25 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-02-05 18:19:25 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-02-05 18:28:42 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-02-05 18:28:42 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-05 18:28:42 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-02-05 18:28:49 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-02-05 18:28:49 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-05 18:28:49 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-02-05 18:28:58 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-02-05 18:28:58 [31merror[39m: 	[31mResponse Error: 401 for /api/auth/login[39m
+2025-02-05 18:28:58 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Invalid credentials!\"}"[39m
+2025-02-05 18:29:30 [32minfo[39m: 	[32m[POST] /api/auth/login[39m
+2025-02-05 18:29:30 [32minfo[39m: 	[32mResponse Success: 200 for /api/auth/login[39m
+2025-02-05 18:29:30 [32minfo[39m: 	[32mResponse Body: "{\"message\":\"Login successful\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4NzYyMTcwLCJleHAiOjE3Mzg4NDg1NzB9.Vx4XCtD66vCES4aaFsGcLisaVmyvao6m0quLT0qCQgw\",\"role\":\"admin\",\"user\":{\"id\":1,\"name\":\"azhar\",\"email\":\"azharnaeem6679@gmail.com\"}}"[39m
+2025-02-05 19:29:17 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-02-05 19:29:18 [31merror[39m: 	[31mSequelizeConnectionError: connection is insecure (try using `sslmode=require`)[39m
+[31m    at Client._connectionCallback (E:\PR\appartmentManagement-backend\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:145:24)[39m
+[31m    at Client._handleErrorWhileConnecting (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:326:19)[39m
+[31m    at Client._handleErrorMessage (E:\PR\appartmentManagement-backend\node_modules\pg\lib\client.js:346:19)[39m
+[31m    at Connection.emit (node:events:517:28)[39m
+[31m    at Connection.emit (node:domain:489:12)[39m
+[31m    at E:\PR\appartmentManagement-backend\node_modules\pg\lib\connection.js:116:12[39m
+[31m    at Parser.parse (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\parser.js:36:17)[39m
+[31m    at Socket.<anonymous> (E:\PR\appartmentManagement-backend\node_modules\pg-protocol\dist\index.js:11:42)[39m
+[31m    at Socket.emit (node:events:517:28)[39m
+[31m    at Socket.emit (node:domain:489:12)[39m
+2025-02-05 19:29:51 [32minfo[39m: 	[32mServer started on port 8080[39m
+2025-02-05 19:30:07 [32minfo[39m: 	[32mDATABASE CONNECTED , Drop and Resync Db[39m
+2025-02-05 19:41:41 [32minfo[39m: 	[32mServer started on port 8080[39m
