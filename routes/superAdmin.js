@@ -18,8 +18,7 @@ const {
   addHouse,
   getHouses,
   deleteHouse,
-} = require("../controllers/superadminController"); // Import controller functions
-
+} = require("../controllers/superadmincontroller"); 
 const router = express.Router();
 
 // Protect all superadmin routes with authorization middleware
