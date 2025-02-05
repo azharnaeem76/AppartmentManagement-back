@@ -1,10 +1,10 @@
 const { Sequelize } = require("sequelize");
 const config = require("../config/index");
 
-const sequelize = new Sequelize(config.db.database, config.db.db_username, config.db.db_password, {
-  host: config.db.db_host,
-  port: config.db.db_port,
-  dialect: config.db.dialect || "postgres",
+const sequelize = new Sequelize("apptx", "default", "uG3zdt1YMWlq", {
+  host: "ep-long-fire-a4hv9rew.us-east-1.aws.neon.tech",
+  port: 5432,
+  dialect: "postgres",
   dialectModule: require('pg'),
   dialectOptions: {
     ssl: {
@@ -13,10 +13,10 @@ const sequelize = new Sequelize(config.db.database, config.db.db_username, confi
     }
   },
   pool: {
-    max: parseInt(config.pool.max) || 10,  // Ensure it's a positive integer
-    min: parseInt(config.pool.min) || 0,   // Min should be <= max
-    acquire: parseInt(config.pool.acquire) || 30000,  // Ensure valid values
-    idle: parseInt(config.pool.idle) || 10000,
+    max:  10,
+    min:  0,
+    acquire: 30000,
+    idle:  10000,
   },
 });
 
