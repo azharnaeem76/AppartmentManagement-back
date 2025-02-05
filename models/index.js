@@ -5,6 +5,7 @@ const sequelize = new Sequelize(config.db.database, config.db.db_username, confi
   host: config.db.db_host,
   port: config.db.db_port,
   dialect: config.db.dialect,
+  dialectModule: require('pg'),
   dialectOptions:{
     ssl:{
       require:true
