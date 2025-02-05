@@ -4,11 +4,12 @@ const config = require("../config/index");
 const sequelize = new Sequelize(config.db.database, config.db.db_username, config.db.db_password, {
   host: config.db.db_host,
   port: config.db.db_port,
-  dialect: config.db.dialect,
+  dialect: config.db.dialect || "postgres",
   dialectModule: require('pg'),
   dialectOptions:{
     ssl:{
-      require:true
+      require:true,
+      rejectUnauthorized: false,
     }
   },
   pool: {
