@@ -6,19 +6,20 @@ const sequelize = new Sequelize(config.db.database, config.db.db_username, confi
   port: config.db.db_port,
   dialect: config.db.dialect || "postgres",
   dialectModule: require('pg'),
-  dialectOptions:{
-    ssl:{
-      require:true,
+  dialectOptions: {
+    ssl: {
+      require: true,
       rejectUnauthorized: false,
     }
   },
   pool: {
-    max: 0,
-    min: 150,
-    acquire: config.pool.acquire,
-    idle: config.pool.idle,
+    max: parseInt(config.pool.max) || 10,  // Ensure it's a positive integer
+    min: parseInt(config.pool.min) || 0,   // Min should be <= max
+    acquire: parseInt(config.pool.acquire) || 30000,  // Ensure valid values
+    idle: parseInt(config.pool.idle) || 10000,
   },
 });
+
 
 const db = {};
 
