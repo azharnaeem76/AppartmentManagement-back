@@ -2,7 +2,7 @@ const app = require('./app');
 const db = require('./models')
 const logger = require('./config/logger');
 const { SimpleDB } = require('aws-sdk');
-var bcrypt = require("bcryptjs");
+const bcrypt = require("bcryptjs");
 
 
 
@@ -12,8 +12,21 @@ db.sequelize.sync(
     // {   force:true}
     ).then(async () => {
         logger.info('DATABASE CONNECTED , Drop and Resync Db')
-    
+        const existingSuperadmin = await db.Superadmin.findOne({ where: { email: 'superadmin@apptx.com' } });
+
+        if(!existingSuperadmin){
+        
+                    await db.Superadmin.create({
+                        name: 'Super Admin',
+                        email: 'superadmin@apptx.com',
+                        password: '12345678@',
+                    });
+        }
     });
+
+
+
+    
 server = app.listen(PORT, () => {
     logger.info(`Server started on port ${PORT}`);
 })

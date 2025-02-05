@@ -1,8 +1,9 @@
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
+const config = require('../config');
 dotenv.config();
 
-const TOKEN_SECRET = process.env.secret;
+const TOKEN_SECRET = config.JWT.SECRET;
 
 // Middleware for verifying token and role
 const authorizeRoute = (roles = []) => {
@@ -22,6 +23,7 @@ const authorizeRoute = (roles = []) => {
                 return res.status(401).send({ message: 'Unauthorized!' });
             }
 
+            console.log(decoded,'the decoded data here')
             req.userId = decoded.id;
             req.role = decoded.role;
 
@@ -35,4 +37,13 @@ const authorizeRoute = (roles = []) => {
     };
 };
 
-module.exports = { authorizeRoute };
+
+const generateToken = (user) => {
+    return jwt.sign(
+        { id: user.id, role: user.role }, // Include user ID and role in token payload
+        TOKEN_SECRET,
+        { expiresIn: '24h' } // Set expiration time as needed
+    );
+};
+
+module.exports = { authorizeRoute , generateToken };

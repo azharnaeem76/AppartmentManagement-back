@@ -1,49 +1,52 @@
-const config = require('../config/index');
-
 const { Sequelize } = require("sequelize");
+const config = require("../config/index");
 
-
-
-console.log(config,'the config here 1 theconfig here')
 const sequelize = new Sequelize(config.db.database, config.db.db_username, config.db.db_password, {
   host: config.db.db_host,
   port: config.db.db_port,
   dialect: config.db.dialect,
-  operatorsAliases: false,
-//   dialectOptions: {
-//     ssl: {
-//       require: true,
-//       rejectUnauthorized: false,
-//     },
-//   },
+  dialectOptions:{
+    ssl:{
+      require:true
+    }
+  },
   pool: {
     max: parseInt(config.pool.max),
-    min:  parseInt(config.pool.min),
+    min: parseInt(config.pool.min),
     acquire: config.pool.acquire,
     idle: config.pool.idle,
   },
-  // logging: false,
 });
 
 const db = {};
 
-db.Sequelize = Sequelize;
+// Load all models without schema assignment
+db.Superadmin = require("./SuperAdmin")(sequelize, Sequelize);
+db.Residency = require("./Residency")(sequelize, Sequelize);
+db.Admin = require("./Admin")(sequelize, Sequelize);
+db.Block = require("./Blocks")(sequelize, Sequelize);
+db.House = require("./House")(sequelize, Sequelize);
+db.Flat = require("./Flats")(sequelize, Sequelize);
+db.Resident = require("./Residents")(sequelize, Sequelize);
+db.Employee = require("./Employees")(sequelize, Sequelize);
+db.Announcement = require("./Announcements")(sequelize, Sequelize);
+db.Complaint = require("./Complaints")(sequelize, Sequelize);
+db.Maintenance = require("./Mantainence")(sequelize, Sequelize);
+db.UnionMember = require("./UnionMember")(sequelize, Sequelize);
+
+// Set up associations without schema for now
+Object.keys(db).forEach((modelName) => {
+  if (db[modelName].associate) {
+    db[modelName].associate(db);
+  }
+});
+
 db.sequelize = sequelize;
+db.Sequelize = Sequelize;
 
+// Method to dynamically set schema for a residency
+db.setSchema = (model, schemaName) => {
+  model.schema = schemaName; // Assign schema dynamically
+};
 
-
-db.SuperAdmin = require('./SuperAdmin')(sequelize, Sequelize);
-db.Residency = require('./Residency')(sequelize, Sequelize);
-
-db.SuperAdmin.hasMany(db.Residency, {
-    foreignKey: "created_by", // The foreign key in the Residency table
-    as: "residencies", // Alias for accessing the residencies created by a super admin
-});
-
-db.Residency.belongsTo(db.SuperAdmin, {
-    foreignKey: "created_by", // The foreign key in the Residency table
-    as: "creator", // Alias for accessing the super admin who created the residency
-});
-
-
-module.exports= db
+module.exports = db;

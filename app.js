@@ -28,6 +28,12 @@ app.use(morgan("combined"));
 app.use(requestLogger);
 
 
+const superAdminAuth = require('./routes/auth.route')
+const superAdminRoutes = require('./routes/superAdmin')
+app.use('/api/auth/',superAdminAuth)
+app.use('/api/superAdmin',superAdminRoutes)
+
+
 // app.use(session({
 //     secret: 'my-secret0here',
 //     resave: false,
