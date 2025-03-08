@@ -5,8 +5,7 @@ const router = express.Router();
 
 // Login route for Superadmin
 router.post("/login", login);
-router.post("/resident/login", residentController.login)
-router.post("/resident/register", residentController.register)
+router.post("/register", residentController.register)
 router.post("/resident/forgotPassword", residentController.forgotPassword)
 router.post("/resident/register", residentController.forgotPassword);
 router.post('/change-password', residentController.changePassword);
