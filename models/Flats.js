@@ -31,8 +31,21 @@ module.exports = (sequelize, Sequelize, schema) => {
         allowNull: true,
         comment: "Optional description for the flat",
       },
+      referral_code: {
+        type: Sequelize.STRING,
+        allowNull: true,
+        unique: true,
+        comment: "Referral code for tracking promotions or referrals",
+      },
     },
-    { schema }
+    {
+      schema,
+      hooks: {
+        beforeCreate: (flat, options) => {
+          flat.referral_code = `FL-${flat.floor_number}-${flat.flat_number}`.replace(/ /g, '');
+        },
+      }
+    }
   );
 
   Flat.associate = (models) => {
@@ -53,3 +66,4 @@ module.exports = (sequelize, Sequelize, schema) => {
 
   return Flat;
 };
+  
