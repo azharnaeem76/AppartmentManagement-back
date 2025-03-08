@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const db = require("../models");
+const { generateToken } = require('../middlewares/Authentication');
 const Resident = db.Resident;
 const Flat = db.Flat;
 
@@ -18,11 +19,10 @@ const residentController = {
         }
       }
 
-      const hashedPassword = await bcrypt.hash(password, 10);
       const resident = await Resident.create({
         name,
         email,
-        password: hashedPassword,
+        password,
         flat_id: flat ? flat.id : null  // Set flat_id if the flat was found
       });
 
@@ -49,9 +49,12 @@ const residentController = {
         return res.status(404).json({ error: 'User not found.' });
       }
 
+      console.log(password ,'the password resident password')
+      console.log(resident.password,'the resident password')
       const match = await bcrypt.compare(password, resident.password);
       if (match) {
-        const token = jwt.sign({ id: resident.id }, 'your_jwt_secret', { expiresIn: '1h' });
+        const token = generateToken({ id: user.id, role });
+
         res.json({ message: 'Login successful', token });
       } else {
         res.status(401).json({ error: 'Invalid password.' });
@@ -90,6 +93,7 @@ const residentController = {
 
   async deleteAccount(req, res) {
     const { id } = req.body;
+    console.log("hello")
     try {
       const resident = await Resident.findByPk(id);
       if (!resident) {
