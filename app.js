@@ -31,9 +31,11 @@ app.use(requestLogger);
 const superAdminAuth = require('./routes/auth.route')
 const superAdminRoutes = require('./routes/superAdmin')
 const complaintRoutes = require('./routes/complaintRoutes')
+const vehicleRoutes = require('./routes/vehicleRoutes')
 app.use('/api/auth/',superAdminAuth)
 app.use('/api/superAdmin',superAdminRoutes)
 app.use('/api/complaints', complaintRoutes)
+app.use('/api/vehicles', vehicleRoutes)
 
 // app.use(session({
 //     secret: 'my-secret0here',
