@@ -44,18 +44,54 @@ const residentController = {
   async login(req, res) {
     const { email, password } = req.body;
     try {
-      const resident = await Resident.findOne({ where: { email } });
+      // Include the flat and its associated block and residency in the query
+      const resident = await Resident.findOne({
+        where: { email },
+        include: [{
+          model: Flat,
+          as: 'flat',
+          include: [{
+            model: Block,
+            as: 'block',
+            include: [{
+              model: Residency,
+              as: 'residency'
+            }]
+          }]
+        }]
+      });
+  
       if (!resident) {
         return res.status(404).json({ error: 'User not found.' });
       }
-
-      console.log(password ,'the password resident password')
-      console.log(resident.password,'the resident password')
+  
+      console.log(password, 'the password resident password');
+      console.log(resident.password, 'the resident password');
+  
       const match = await bcrypt.compare(password, resident.password);
       if (match) {
-        const token = generateToken({ id: user.id, role });
-
-        res.json({ message: 'Login successful', token });
+        const token = generateToken({ id: resident.id, role: 'resident' });  // Assuming role is 'resident', adjust as necessary
+  
+        // Include related flat, block, and residency data in the response
+        const response = {
+          message: 'Login successful',
+          token,
+          resident: {
+            id: resident.id,
+            email: resident.email,
+            flat: resident.flat ? {
+              flat_number: resident.flat.flat_number,
+              block: resident.flat.block ? {
+                block_name: resident.flat.block.block_name,
+                residency: resident.flat.block.residency ? {
+                  residency_name: resident.flat.block.residency.residency_name
+                } : null
+              } : null
+            } : null
+          }
+        };
+  
+        res.json(response);
       } else {
         res.status(401).json({ error: 'Invalid password.' });
       }

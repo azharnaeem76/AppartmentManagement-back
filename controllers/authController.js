@@ -3,6 +3,9 @@ const db = require('../models');
 const Superadmin = db.Superadmin;
 const Admin = db.Admin;
 const Resident = db.Resident
+const Flat = db.Flat
+const Block  = db.Block;
+const Residency = db.Residency
 const { generateToken } = require('../middlewares/Authentication'); // Import the generateToken function
 
 // Login controller for Superadmin
@@ -94,7 +97,22 @@ exports.login = async (req, res) => {
         model = Admin;
         role = "admin";
       } else {
-        const resident = await Resident.findOne({ where: { email } });
+        // Fetch resident along with flat, block, and residency details if they exist
+        const resident = await Resident.findOne({
+          where: { email },
+          include: [{
+            model: Flat,
+            as: 'flat',
+            include: [{
+              model: Block,
+              as: 'block',
+              include: [{
+                model: Residency,
+                as: 'residency'
+              }]
+            }]
+          }]
+        });
         if (resident) {
           model = Resident;
           role = "resident";
@@ -106,12 +124,11 @@ exports.login = async (req, res) => {
       return res.status(404).json({ message: "User not found!" });
     }
 
-    // Find the user by email
-    const user = await model.findOne({ where: { email } });
+    // Find the user by email, considering the model could have been fetched already
+    const user = model === Resident ? resident : await model.findOne({ where: { email } });
 
     // Compare password with the hashed password stored in the database
     const isMatch = await bcrypt.compare(password, user.password);
-
     if (!isMatch) {
       return res.status(401).json({ message: "Invalid credentials!" });
     }
@@ -119,13 +136,29 @@ exports.login = async (req, res) => {
     // Generate a JWT token
     const token = generateToken({ id: user.id, role });
 
-    // Send the response with the token
-    return res.status(200).json({
+    // Prepare the response based on user role
+    const response = {
       message: "Login successful",
       token,
       role,
-      user: { id: user.id, name: user.name, email: user.email },
-    });
+      user: { id: user.id, name: user.name, email: user.email }
+    };
+
+    if (role === "resident") {
+      // Extend the response with structured resident data if the user is a resident
+      response.user.flat = user.flat ? {
+        flat_number: user.flat.flat_number,
+        block: user.flat.block ? {
+          block_name: user.flat.block.block_name,
+          residency: user.flat.block.residency ? {
+            residency_name: user.flat.block.residency.residency_name
+          } : null
+        } : null
+      } : null;
+    }
+
+    // Send the response with the token
+    return res.status(200).json(response);
   } catch (error) {
     console.error(error);
     return res.status(500).json({ message: "Server error", error: error.message });
