@@ -6,7 +6,7 @@ const { authorizeRoute } = require("../middlewares/Authentication");
 const router = express.Router();
 
 // Middleware to ensure all vehicle routes are accessed by authenticated and authorized users
-router.use(authorizeRoute("resident"));
+// router.use(authorizeRoute("resident"));
 
 // Vehicle routes
 router.post('/', vehicleController.addVehicle);
