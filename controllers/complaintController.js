@@ -1,7 +1,8 @@
 const db = require("../models");
 
 const Complaint = db.Complaint;
-
+const Resident = db.Resident;
+const Residency = db.Residency;
 const complaintController = {
     // Add a new complaint
     async addComplaint(req, res) {
