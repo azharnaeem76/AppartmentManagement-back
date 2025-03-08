@@ -84,20 +84,18 @@ exports.login = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    // Determine the role and model based on the email
-    let model, role;
+    let user, role;
 
     const superadmin = await Superadmin.findOne({ where: { email } });
     if (superadmin) {
-      model = Superadmin;
+      user = superadmin;
       role = "superAdmin";
     } else {
       const admin = await Admin.findOne({ where: { email } });
       if (admin) {
-        model = Admin;
+        user = admin;
         role = "admin";
       } else {
-        // Fetch resident along with flat, block, and residency details if they exist
         const resident = await Resident.findOne({
           where: { email },
           include: [{
@@ -114,18 +112,15 @@ exports.login = async (req, res) => {
           }]
         });
         if (resident) {
-          model = Resident;
+          user = resident;
           role = "resident";
         }
       }
     }
 
-    if (!model) {
+    if (!user) {
       return res.status(404).json({ message: "User not found!" });
     }
-
-    // Find the user by email, considering the model could have been fetched already
-    const user = model === Resident ? resident : await model.findOne({ where: { email } });
 
     // Compare password with the hashed password stored in the database
     const isMatch = await bcrypt.compare(password, user.password);
@@ -141,20 +136,46 @@ exports.login = async (req, res) => {
       message: "Login successful",
       token,
       role,
-      user: { id: user.id, name: user.name, email: user.email }
+      user: {
+        id: user.id,
+        name: user.name,
+        email: user.email
+      }
     };
 
-    if (role === "resident") {
-      // Extend the response with structured resident data if the user is a resident
-      response.user.flat = user.flat ? {
+    if (role === "resident" && user.flat) {
+      // Extend the response with detailed information if the user is a resident
+      response.user.flat = {
         flat_number: user.flat.flat_number,
-        block: user.flat.block ? {
-          block_name: user.flat.block.block_name,
-          residency: user.flat.block.residency ? {
-            residency_name: user.flat.block.residency.residency_name
-          } : null
-        } : null
-      } : null;
+        number_of_rooms: user.flat.number_of_rooms,
+        floor_number: user.flat.floor_number,
+        area: user.flat.area,
+        description: user.flat.description,
+        occupancy_status: user.flat.occupancy_status
+      };
+
+      if (user.flat.block) {
+        response.user.flat.block = {
+          name: user.flat.block.name,
+          title: user.flat.block.title,
+          total_units: user.flat.block.total_units
+        };
+
+        if (user.flat.block.residency) {
+          response.user.flat.block.residency = {
+            name: user.flat.block.residency.name,
+            country: user.flat.block.residency.country,
+            state: user.flat.block.residency.state,
+            address: user.flat.block.residency.address,
+            location: user.flat.block.residency.location,
+            total_units: user.flat.block.residency.total_units,
+            amenities: user.flat.block.residency.amenities,
+            established_date: user.flat.block.residency.established_date,
+            maintenance_rate: user.flat.block.residency.maintenance_rate,
+            description: user.flat.block.residency.description
+          };
+        }
+      }
     }
 
     // Send the response with the token
