@@ -11,6 +11,7 @@ router.use(authorizeRoute("resident"));
 // Route to get all complaints
 router.get("/", complaintController.getAllComplaints);
 
+router.get("/me", complaintController.getUserComplaints)
 // Route to add a new complaint
 router.post("/", complaintController.addComplaint);
 
@@ -19,5 +20,7 @@ router.put("/:id", complaintController.updateComplaint);
 
 // Route to delete an existing complaint
 router.delete("/:id", complaintController.deleteComplaint);
+
+
 
 module.exports = router;

@@ -1,61 +1,60 @@
 module.exports = (sequelize, Sequelize, schema) => {
-    const UnionMember = sequelize.define(
-      "unionMember",
+  const Expense = sequelize.define(
+      "expense",
       {
-        name: {
-          type: Sequelize.STRING,
-          allowNull: false,
-        },
-        designation: {
-          type: Sequelize.STRING,
-          allowNull: false,
-        },
-        phone: {
-          type: Sequelize.STRING,
-          allowNull: false,
-        },
-        email: {
-          type: Sequelize.STRING,
-          allowNull: false,
-          unique: true,
-        },
-        join_date: {
-          type: Sequelize.DATE,
-          allowNull: false,
-          defaultValue: Sequelize.NOW, // Default to the current timestamp
-        },
-        flat_number: {
-          type: Sequelize.STRING,
-          allowNull: true,
-        },
-        house_number: {
-          type: Sequelize.STRING,
-          allowNull: true,
-        },
-        residency_id: {
-          type: Sequelize.INTEGER,
-          allowNull: false,
-          references: {
-            model: "residencies", // Link to the Residency table
-            key: "id",
+          title: {
+              type: Sequelize.STRING,
+              allowNull: false,
           },
-        },
+          invoice_number: {
+              type: Sequelize.STRING,
+              allowNull: false,
+              unique: true,
+          },
+          due_date: {
+              type: Sequelize.DATE,
+              allowNull: false,
+          },
+          amount: {
+              type: Sequelize.FLOAT,
+              allowNull: false,
+          },
+          after_due_date_amount: {
+              type: Sequelize.FLOAT,
+              allowNull: false,
+              comment: "Amount to be paid if due date is missed",
+          },
+          status: {
+              type: Sequelize.ENUM("pending", "paid"),
+              allowNull: false,
+              defaultValue: "pending",
+          },
+          type: {
+              type: Sequelize.ENUM("union", "finance"),
+              allowNull: false,
+              comment: "Defines whether the expense is related to the union or finance.",
+          },
+          block_id: {
+              type: Sequelize.INTEGER,
+              allowNull: false,
+              references: {
+                  model: "blocks",
+                  key: "id",
+              },
+              comment: "The ID of the block associated with this expense.",
+          },
       },
       { schema }
-    );
-  
-    UnionMember.associate = (models) => {
-      // One-to-Many relationship: Residency -> UnionMember
-      UnionMember.belongsTo(models.Residency, {
-        foreignKey: "residency_id",
-        as: "residency",
-        onDelete: "CASCADE", // If a residency is deleted, delete related union members
+  );
+
+  Expense.associate = (models) => {
+      // Associate with Block
+      Expense.belongsTo(models.Block, {
+          foreignKey: "block_id",
+          as: "block",
+          onDelete: "CASCADE",
       });
-  
-      // Optionally, you can add associations to Employee, Admin, or Announcement models 
-      // if union members can also perform those actions. For now, we keep it residency-based.
-    };
-  
-    return UnionMember;
   };
-  
+
+  return Expense;
+};

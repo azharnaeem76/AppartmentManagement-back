@@ -18,6 +18,7 @@ const sequelize = new Sequelize("apptx", "default", "uG3zdt1YMWlq", {
     acquire: 30000,
     idle:  10000,
   },
+  logging:false
 });
 
 
@@ -37,6 +38,8 @@ db.Complaint = require("./Complaints")(sequelize, Sequelize);
 db.Maintenance = require("./Mantainence")(sequelize, Sequelize);
 db.UnionMember = require("./UnionMember")(sequelize, Sequelize);
 db.Vehicle = require("./Vehicle")(sequelize, Sequelize);
+db.Bill = require("./Bills")(sequelize, Sequelize);
+db.Expense = require("./Expenses")(sequelize, Sequelize);
 // Set up associations without schema for now
 Object.keys(db).forEach((modelName) => {
   if (db[modelName].associate) {

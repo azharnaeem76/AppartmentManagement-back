@@ -43,6 +43,38 @@ const complaintController = {
         }
     },
 
+    async getUserComplaints(req, res) {
+        try {
+            const userId = req.userId;
+    
+            const complaints = await Complaint.findAll({
+                where: { resident_id: userId }, // Filter complaints by userId
+                include: [
+                    {
+                        model: Resident,
+                        as: 'resident',
+                        attributes: ['name', 'email']
+                    },
+                    {
+                        model: Residency,
+                        as: 'residency',
+                        attributes: ['name']
+                    }
+                ]
+            });
+    
+            // If no complaints found, return a message
+            if (!complaints.length) {
+                return res.status(404).json({ message: "No complaints found for this user." });
+            }
+    
+            res.status(200).json(complaints);
+        } catch (error) {
+            console.error("Error fetching complaints:", error);
+            res.status(500).json({ error: "Internal server error." });
+        }
+    },
+    
     // Update a complaint
     async updateComplaint(req, res) {
         const { id } = req.params;
