@@ -36,6 +36,12 @@
                   },
                   comment: "ID of the flat this resident lives in.",
                 },
+                defaulter: {
+                  type: Sequelize.BOOLEAN,
+                  allowNull: false,
+                  defaultValue: false,
+                  comment: "Indicates if the resident is a defaulter (true or false)."
+                },
                 deletedAt:{
                   type:Sequelize.DATE,
                   default:null

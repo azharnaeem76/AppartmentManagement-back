@@ -288,7 +288,39 @@ const residentController = {
         console.error("Error fetching expenses:", error);
         return res.status(500).json({ error: "Internal server error." });
     }
-},
+  },
+
+  async getDefaulters(req, res) {
+    try {
+        const defaulters = await Resident.findAll({
+            where: { defaulter: true }, // Fetch only residents marked as defaulters
+            include: [
+                {
+                    model: Flat,
+                    as: "flat",
+                    attributes: ["flat_number", "floor_number"],
+                    include: [
+                        {
+                            model: Block,
+                            as: "block",
+                            attributes: ["name"]
+                        }
+                    ]
+                }
+            ],
+            attributes: ["id", "name", "email", "defaulter"], // Resident details
+        });
+
+        if (!defaulters.length) {
+            return res.status(404).json({ message: "No defaulters found." });
+        }
+
+        res.status(200).json({ message: "Defaulters retrieved successfully", result: defaulters });
+    } catch (error) {
+        console.error("Error fetching defaulters:", error);
+        res.status(500).json({ error: error.message });
+    }
+}
 
   
   
