@@ -7,7 +7,7 @@ const Residency = db.Residency;
 const Block = db.Block;
 const Flat = db.Flat;
 const Expense = db.Expense;
-
+const UnionMember = db.UnionMember;
 
 const residentController = {
   async register(req, res) {
@@ -30,7 +30,7 @@ const residentController = {
       });
 
       res.status(201).json({
-        id: resident.id,  
+        id: resident.id,
         name: resident.name,
         email: resident.email,
         flat: flat
@@ -63,18 +63,18 @@ const residentController = {
           }]
         }]
       });
-  
+
       if (!resident) {
         return res.status(404).json({ error: 'User not found.' });
       }
-  
+
       console.log(password, 'the password resident password');
       console.log(resident.password, 'the resident password');
-  
+
       const match = await bcrypt.compare(password, resident.password);
       if (match) {
         const token = generateToken({ id: resident.id, role: 'resident' });  // Assuming role is 'resident', adjust as necessary
-  
+
         // Include related flat, block, and residency data in the response
         const response = {
           message: 'Login successful',
@@ -93,7 +93,7 @@ const residentController = {
             } : null
           }
         };
-  
+
         res.json(response);
       } else {
         res.status(401).json({ error: 'Invalid password.' });
@@ -151,16 +151,16 @@ const residentController = {
     try {
       const userId = req.userId;
       console.log("User ID:", userId);
-  
+
       // Step 1: Fetch Resident
       const resident = await Resident.findOne({
         where: { id: userId }
       });
-  
+
       if (!resident) {
         return res.status(404).json({ error: "User not found." });
       }
-  
+
       // Step 2: Fetch Flat separately
       let flat = null;
       if (resident.flat_id) {
@@ -168,7 +168,7 @@ const residentController = {
           where: { id: resident.flat_id }
         });
       }
-  
+
       // Step 3: Fetch Block separately
       let block = null;
       if (flat && flat.block_id) {
@@ -176,7 +176,7 @@ const residentController = {
           where: { id: flat.block_id }
         });
       }
-  
+
       // Step 4: Fetch Residency separately
       let residency = null;
       if (block && block.residency_id) {
@@ -186,12 +186,12 @@ const residentController = {
       }
       console.log(residency)
       const marqueeText = await db.Announcement.findOne({ where: { residency_id: residency.id, type: "marquee" } });
-      
+
       // Structuring response
       res.status(200).json({
         marqueeText
       });
-  
+
     } catch (error) {
       console.error("Error fetching resident:", error);
       res.status(500).json({ error: "Internal server error." });
@@ -199,137 +199,176 @@ const residentController = {
   },
   async getUserBills(req, res) {
     try {
-        const userId = req.userId;
+      const userId = req.userId;
 
-        // Step 1: Get the user's residency
-        const resident = await db.Resident.findOne({
-            where: { id: userId },
+      // Step 1: Get the user's residency
+      const resident = await db.Resident.findOne({
+        where: { id: userId },
+        include: {
+          model: db.Flat,
+          as: "flat",
+          include: {
+            model: db.Block,
+            as: "block",
             include: {
-                model: db.Flat,
-                as: "flat",
-                include: {
-                    model: db.Block,
-                    as: "block",
-                    include: {
-                        model: db.Residency,
-                        as: "residency",
-                        attributes: ["id", "name"],
-                    },
-                },
+              model: db.Residency,
+              as: "residency",
+              attributes: ["id", "name"],
             },
-        });
+          },
+        },
+      });
 
-        if (!resident || !resident.flat || !resident.flat.block || !resident.flat.block.residency) {
-            return res.status(404).json({ error: "User's residency not found." });
-        }
+      if (!resident || !resident.flat || !resident.flat.block || !resident.flat.block.residency) {
+        return res.status(404).json({ error: "User's residency not found." });
+      }
 
-        const residencyId = resident.flat.block.residency.id;
+      const residencyId = resident.flat.block.residency.id;
 
-        // Step 2: Fetch all bills for the residency
-        const bills = await db.Bill.findAll({
-            where: { residency_id: residencyId },
-            include: {
-                model: db.Residency,
-                as: "residency",
-                attributes: ["name"],
-            },
-        });
+      // Step 2: Fetch all bills for the residency
+      const bills = await db.Bill.findAll({
+        where: { residency_id: residencyId },
+        include: {
+          model: db.Residency,
+          as: "residency",
+          attributes: ["name"],
+        },
+      });
 
-        res.status(200).json({
-            message: "User bills retrieved successfully",
-            bills,
-        });
+      res.status(200).json({
+        message: "User bills retrieved successfully",
+        bills,
+      });
     } catch (error) {
-        console.error("Error fetching bills:", error);
-        res.status(500).json({ error: "Internal server error." });
+      console.error("Error fetching bills:", error);
+      res.status(500).json({ error: "Internal server error." });
     }
   },
 
   async getUserExpenses(req, res) {
     try {
-        const userId = req.userId; // Get user ID from the request
-        const { type } = req.body; // Get expense type from request body
+      const userId = req.userId; // Get user ID from the request
+      const { type } = req.body; // Get expense type from request body
 
-        // Validate type
-        if (!type || !["finance", "union"].includes(type)) {
-            return res.status(400).json({ error: "Invalid expense type. Must be 'finance' or 'union'." });
-        }
+      // Validate type
+      if (!type || !["finance", "union"].includes(type)) {
+        return res.status(400).json({ error: "Invalid expense type. Must be 'finance' or 'union'." });
+      }
 
-        // Find the resident (user) with their associated flat and block
-        const resident = await Resident.findOne({
-            where: { id: userId },
-            include: {
-                model: Flat,
-                as: "flat",
-                include: {
-                    model: Block,
-                    as: "block",
-                },
-            },
-        });
+      // Find the resident (user) with their associated flat and block
+      const resident = await Resident.findOne({
+        where: { id: userId },
+        include: {
+          model: Flat,
+          as: "flat",
+          include: {
+            model: Block,
+            as: "block",
+          },
+        },
+      });
 
-        // Check if resident exists and has a flat & block
-        if (!resident || !resident.flat || !resident.flat.block) {
-            return res.status(404).json({ error: "Resident, flat, or block not found." });
-        }
+      // Check if resident exists and has a flat & block
+      if (!resident || !resident.flat || !resident.flat.block) {
+        return res.status(404).json({ error: "Resident, flat, or block not found." });
+      }
 
-        const blockId = resident.flat.block.id; // Get block ID
+      const blockId = resident.flat.block.id; // Get block ID
 
-        // Fetch expenses for the block with the requested type
-        const expenses = await Expense.findAll({
-            where: { block_id: blockId, type: type },
-        });
+      // Fetch expenses for the block with the requested type
+      const expenses = await Expense.findAll({
+        where: { block_id: blockId, type: type },
+      });
 
-        return res.status(200).json({
-            message: "Expenses retrieved successfully.",
-            expenses,
-        });
+      return res.status(200).json({
+        message: "Expenses retrieved successfully.",
+        expenses,
+      });
     } catch (error) {
-        console.error("Error fetching expenses:", error);
-        return res.status(500).json({ error: "Internal server error." });
+      console.error("Error fetching expenses:", error);
+      return res.status(500).json({ error: "Internal server error." });
     }
   },
 
   async getDefaulters(req, res) {
     try {
-        const defaulters = await Resident.findAll({
-            where: { defaulter: true }, // Fetch only residents marked as defaulters
+      const defaulters = await Resident.findAll({
+        where: { defaulter: true }, // Fetch only residents marked as defaulters
+        include: [
+          {
+            model: Flat,
+            as: "flat",
+            attributes: ["flat_number", "floor_number"],
+            include: [
+              {
+                model: Block,
+                as: "block",
+                attributes: ["name"]
+              }
+            ]
+          }
+        ],
+        attributes: ["id", "name", "email", "defaulter"], // Resident details
+      });
+
+      if (!defaulters.length) {
+        return res.status(404).json({ message: "No defaulters found." });
+      }
+
+      const result = defaulters.map(defaulter => ({
+        ...defaulter.toJSON(),
+        dues: 2050
+      }));
+
+      res.status(200).json({ message: "Defaulters retrieved successfully", result: result });
+    } catch (error) {
+      console.error("Error fetching defaulters:", error);
+      res.status(500).json({ error: error.message });
+    }
+  },
+
+  async getUnionContacts(req, res) {
+    try {
+        const userId = req.userId; // Get user ID from request
+        const resident = await Resident.findOne({
+            where: { id: userId },
             include: [
                 {
                     model: Flat,
                     as: "flat",
-                    attributes: ["flat_number", "floor_number"],
                     include: [
                         {
                             model: Block,
                             as: "block",
-                            attributes: ["name"]
+                            attributes: ["id", "name", "residency_id"]
                         }
                     ]
                 }
-            ],
-            attributes: ["id", "name", "email", "defaulter"], // Resident details
+            ]
         });
 
-        if (!defaulters.length) {
-            return res.status(404).json({ message: "No defaulters found." });
+        if (!resident || !resident.flat || !resident.flat.block) {
+            return res.status(404).json({ message: "User or block not found." });
         }
 
-        const result = defaulters.map(defaulter => ({
-          ...defaulter.toJSON(),
-          dues: 2050
-      }));
+        const { residency_id } = resident.flat.block;
 
-        res.status(200).json({ message: "Defaulters retrieved successfully", result: result });
+        const unionContacts = await UnionMember.findAll({
+            where: { residency_id },
+            attributes: ["name", "designation", "phone", "email"]
+        });
+
+        if (!unionContacts.length) {
+            return res.status(404).json({ message: "No union contacts found for this block." });
+        }
+
+        res.status(200).json({ message: "Union contacts retrieved successfully", result: unionContacts });
     } catch (error) {
-        console.error("Error fetching defaulters:", error);
+        console.error("Error fetching union contacts:", error);
         res.status(500).json({ error: error.message });
     }
 }
 
-  
-  
-  
 };
 
 module.exports = residentController;
