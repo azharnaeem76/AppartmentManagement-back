@@ -315,7 +315,12 @@ const residentController = {
             return res.status(404).json({ message: "No defaulters found." });
         }
 
-        res.status(200).json({ message: "Defaulters retrieved successfully", result: defaulters });
+        const result = defaulters.map(defaulter => ({
+          ...defaulter.toJSON(),
+          dues: 2050
+      }));
+
+        res.status(200).json({ message: "Defaulters retrieved successfully", result: result });
     } catch (error) {
         console.error("Error fetching defaulters:", error);
         res.status(500).json({ error: error.message });
