@@ -18,6 +18,8 @@ const {
   addHouse,
   getHouses,
   deleteHouse,
+  getFlatsByResidency,
+  getUnionContacts,
 } = require("../controllers/superadmincontroller"); 
 const router = express.Router();
 
@@ -45,11 +47,14 @@ router.delete("/block/:blockId", deleteBlock); // Delete block by ID
 // Flat management routes
 router.post("/block/:blockId/add-flat", addFlat); // Add flat to block
 router.get("/block/:blockId/flats", getFlats); // Get all flats in block
-router.delete("/flat/:flatId", deleteFlat); // Delete flat by ID
+router.get("/flatsByResidency/:residencyId/flats", getFlatsByResidency); // Get all flats in block
 
+router.delete("/flat/:flatId", deleteFlat); // Delete flat by ID
 // House management routes
 router.post("/residency/:residencyId/add-house", addHouse); // Add house to residency
 router.get("/residency/:residencyId/houses", getHouses); // Get all houses in residency
 router.delete("/house/:houseId", deleteHouse); // Delete house by ID
 
+
+router.get("/unionMembers/:residencyId",getUnionContacts)
 module.exports = router;

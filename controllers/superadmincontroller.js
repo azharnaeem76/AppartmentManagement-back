@@ -8,16 +8,20 @@ const Block = db.Block;
 const Flat = db.Flat;
 const bcrypt = require("bcryptjs");
 
-// Create a new Residency
+const Sequelize = require('sequelize');
+const Op = Sequelize.Op;
+const crypto = require('crypto');
+
+// Generates a random alphanumeric string of a given length
+const generateRandomCode = (length) => {
+  return crypto.randomBytes(Math.ceil(length / 2)).toString('hex').substring(0, length);
+};
+
 exports.createResidency = async (req, res) => {
   try {
-    const { name, country, state, address, location, total_units, amenities, established_date, maintenance_rate, description } = req.body;
+    const { name, country, state, address, location, total_units, amenities, established_date, maintenance_rate, description, units } = req.body;
+    const createdBy = req.userId;
 
-    console.log(req.user)
-    // Get the Superadmin ID from the request (you might pass this in a JWT or session)
-    const createdBy = req.userId; // Assuming user is authenticated and Superadmin info is in `req.user`
-
-    // Create a new residency
     const residency = await Residency.create({
       name,
       country,
@@ -29,30 +33,92 @@ exports.createResidency = async (req, res) => {
       established_date,
       maintenance_rate,
       description,
-      created_by: createdBy,
+      created_by: createdBy
     });
+
+    const codes = new Set(); // Store used codes to ensure uniqueness within this creation process
+
+    for (const unit of units) {
+      const block = await residency.createBlock({
+        name: unit.id,
+        title: `Block ${unit.id}`,
+        total_units: unit.floors * unit.flatsPerFloor
+      });
+
+      for (let floor = 1; floor <= unit.floors; floor++) {
+        for (let flat = 1; flat <= unit.flatsPerFloor; flat++) {
+          let referralCode;
+          do {
+            referralCode = generateRandomCode(8);  // Generate an 8-character code
+          } while (codes.has(referralCode)); // Ensure uniqueness within the batch
+          codes.add(referralCode);
+
+          console.log(referralCode,'my flat ref')
+          await block.createFlat({
+            flat_number: `${unit.id}${floor}0${flat}`,
+            number_of_rooms: 2,
+            floor_number: floor,
+            area: 50,
+            description: 'Standard flat',
+            referral_code: referralCode
+          });
+        }
+      }
+    }
 
     return res.status(201).json({ message: "Residency created successfully", residency });
   } catch (error) {
-    console.error(error);
+    console.error("Error creating residency:", error);
     return res.status(500).json({ message: "Error creating residency", error: error.message });
   }
 };
 
+
+
+
 // Get all Residencies for the Superadmin
 exports.getAllResidencies = async (req, res) => {
   try {
+    // Fetch all residencies created by the logged-in superadmin
     const residencies = await Residency.findAll({
-      where: { created_by: req.userId }, // Ensure only superadmin's residencies are shown
-      include: [{ model: db.Admin, as: 'admins' }, { model: db.Block, as: 'blocks' }, { model: db.House, as: 'houses' }],
+      where: { created_by: req.userId }, // Filter by the superadmin's ID
+      include: [{
+        model: db.Block,
+        as: 'blocks', // Ensure this alias matches the one defined in your Sequelize associations
+        include: [{
+          model: db.Flat,
+          as: 'flats' // Ensure this alias matches the one defined in your Sequelize associations
+        }]
+      }]
     });
 
-    return res.status(200).json(residencies);
+    // Format the response to match the requested structure
+    const formattedResidencies = residencies.map(residency => ({
+      id: residency.id,
+      name: residency.name,
+      country: residency.country,
+      state: residency.state,
+      address: residency.address,
+      location: residency.location,
+      total_units: residency.total_units,
+      amenities: residency.amenities,
+      established_date: residency.established_date,
+      maintenance_rate: residency.maintenance_rate,
+      description: residency.description,
+      units: residency.blocks.map(block => ({
+        id: block.name, // Assuming 'name' is used as the ID in the request example
+        floors: block.total_units, // This may need adjustment depending on how you define 'floors' in your model
+        flatsPerFloor: block.flats.length > 0 ? block.flats.length / block.total_units : 0 // Calculate flats per floor
+      }))
+    }));
+
+    return res.status(200).json(formattedResidencies);
   } catch (error) {
-    console.error(error);
+    console.error("Error fetching residencies:", error);
     return res.status(500).json({ message: "Error fetching residencies", error: error.message });
   }
 };
+
 
 // Get a single Residency by ID
 exports.getResidencyById = async (req, res) => {
@@ -358,13 +424,36 @@ exports.getBlocks = async (req, res) => {
   try {
     const blocks = await Block.findAll({
       where: { residency_id: residencyId },
-      include: [{ model: Flat }],
+      include: [{ model: Flat, as: 'flats' }],  // Use the correct alias as defined in your association
     });
 
     res.status(200).json(blocks);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Error fetching blocks", error: error.message });
+  }
+};
+
+exports.getFlatsByResidency = async (req, res) => {
+  const { residencyId } = req.params;
+
+  try {
+    // Fetch all blocks related to the residency
+    const blocks = await Block.findAll({
+      where: { residency_id: residencyId },
+      include: [{
+        model: Flat,
+        as: 'flats'  // Ensure that the alias used here matches the one defined in your model associations
+      }]
+    });
+
+    // Extract flats from each block
+    const flats = blocks.reduce((acc, block) => acc.concat(block.flats), []);
+
+    res.status(200).json(flats);
+  } catch (error) {
+    console.error("Error fetching flats:", error);
+    res.status(500).json({ message: "Error fetching flats", error: error.message });
   }
 };
 
@@ -511,3 +600,26 @@ exports.deleteHouse = async (req, res) => {
     res.status(500).json({ message: "Error deleting house", error: error.message });
   }
 };
+
+
+exports.getUnionContacts = async(req, res) => {
+
+  try {
+    const { residencyId } = req.params;
+
+
+      const unionContacts = await db.UnionMember.findAll({
+          where: { residency_id:residencyId },
+          attributes: ["name", "designation", "phone", "email"]
+      });
+
+      if (!unionContacts.length) {
+          return res.status(404).json({ message: "No union contacts found for this block." });
+      }
+
+      res.status(200).json({ message: "Union contacts retrieved successfully", result: unionContacts });
+  } catch (error) {
+      console.error("Error fetching union contacts:", error);
+      res.status(500).json({ error: error.message });
+  }
+}

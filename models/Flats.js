@@ -40,11 +40,11 @@ module.exports = (sequelize, Sequelize, schema) => {
     },
     {
       schema,
-      hooks: {
-        beforeCreate: (flat, options) => {
-          flat.referral_code = `FL-${flat.floor_number}-${flat.flat_number}`.replace(/ /g, '');
-        },
-      }
+      // hooks: {
+      //   beforeCreate: (flat, options) => {
+      //     flat.referral_code = `FL-${flat.floor_number}-${flat.flat_number}`.replace(/ /g, '');
+      //   },
+      // }
     }
   );
 
