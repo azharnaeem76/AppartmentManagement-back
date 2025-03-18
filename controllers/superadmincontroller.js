@@ -6,6 +6,8 @@ const House = db.House;
 const Resident = db.Resident;
 const Block = db.Block;
 const Flat = db.Flat;
+const Announcements = db.Announcement;
+const UnionMember = db.UnionMember
 const bcrypt = require("bcryptjs");
 
 const Sequelize = require('sequelize');
@@ -623,3 +625,213 @@ exports.getUnionContacts = async(req, res) => {
       res.status(500).json({ error: error.message });
   }
 }
+
+exports.createAnnouncement = async (req, res) => {
+  const { title, message, type, residency_id } = req.body; // Get the necessary data from request body
+
+  // Assuming req.userId contains the ID of the Superadmin
+  const createdBy = req.userId; // Get the ID of the user creating the announcement
+  console.log(req.userId)
+  try {
+    // Create the new announcement
+    const newAnnouncement = await Announcements.create({
+      title,
+      message,
+      type: type || null,
+      residency_id,
+      created_by: createdBy, 
+      created_by_type: "Superadmin",
+    });
+
+    return res.status(201).json({
+      message: "Announcement created successfully",
+      result: newAnnouncement,
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      message: "Error creating announcement",
+      error: error.message,
+    });
+  }
+};
+
+exports.getAnnouncementsByResidencyId = async (req, res) => {
+  const { residency_id } = req.params; 
+
+  try {
+    const announcements = await Announcements.findAll({
+      where: { residency_id }, 
+      include: [{ model: Residency, as: 'residency' }] 
+    });
+
+    // If no announcements are found, return a message
+    if (announcements.length === 0) {
+      return res.status(404).json({ message: "No announcements found for this residency." });
+    }
+
+    // Return the list of announcements
+    return res.status(200).json({
+      message: "Announcements retrieved successfully",
+      result:announcements
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      message: "Error fetching announcements",
+      error: error.message
+    });
+  }
+};
+
+// 1. Create a new Union Member
+exports.createUnionMember = async (req, res) => {
+  const { name, designation, phone, email, flat_number, house_number, residency_id } = req.body;
+
+  try {
+    // Validate residency_id
+    const residency = await Residency.findByPk(residency_id);
+    if (!residency) {
+      return res.status(404).json({ message: "Residency not found" });
+    }
+
+    // Create a new union member
+    const newUnionMember = await UnionMember.create({
+      name,
+      designation,
+      phone,
+      email,
+      flat_number,
+      house_number,
+      residency_id,
+    });
+
+    return res.status(201).json({
+      message: "Union member created successfully",
+      unionMember: newUnionMember,
+    });
+  } catch (error) {
+    console.error("Error creating union member:", error);
+    return res.status(500).json({
+      message: "Error creating union member",
+      error: error.message,
+    });
+  }
+};
+
+// 2. Get Union Members by Residency ID
+exports.getUnionMembersByResidency = async (req, res) => {
+  const { residencyId } = req.params;
+
+  try {
+    // Fetch union members associated with the given residency ID
+    const unionMembers = await UnionMember.findAll({
+      where: { residency_id: residencyId },
+      include: [
+        {
+          model: Residency,
+          as: "residency",
+          attributes: ["name"], // Include the name of the residency
+        },
+      ],
+    });
+
+    if (!unionMembers.length) {
+      return res.status(404).json({ message: "No union members found for this residency" });
+    }
+
+    return res.status(200).json({
+      message: "Union members fetched successfully",
+      result: unionMembers,
+    });
+  } catch (error) {
+    console.error("Error fetching union members:", error);
+    return res.status(500).json({
+      message: "Error fetching union members",
+      error: error.message,
+    });
+  }
+};
+
+
+// Controller function to get all residents
+exports.getAllResidents = async (req, res) => {
+  try {
+    // Fetch all residents with associated house and flat information
+    const residents = await Resident.findAll({
+      include: [
+        {
+          model: House,  // Assuming you have a House model defined
+          as: 'house',
+        },
+        {
+          model: Flat,  // Assuming you have a Flat model defined
+          as: 'flat',
+        },
+      ],
+    });
+
+    return res.status(200).json({
+      message: "Residents fetched successfully",
+      result:residents,
+    });
+  } catch (error) {
+    console.error("Error fetching residents:", error);
+    return res.status(500).json({
+      message: "Error fetching residents",
+      error: error.message,
+    });
+  }
+};
+
+
+
+
+exports.getResidentsByResidencyId = async (req, res) => {
+  const { residency_id } = req.params; // Get the residency_id from request params
+
+  try {
+    // Fetch residents based on residency_id via the block association
+    const residents = await Resident.findAll({
+      include: [
+        {
+          model: Flat,
+          as: "flat", 
+          include: [
+            {
+              model: Block,
+              as: "block",
+              where: { residency_id }, 
+              include: [
+                {
+                  model: Residency,
+                  as: "residency",
+                  where: { id: residency_id },
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    });
+
+    // If no residents are found for the given residency_id
+    if (residents.length === 0) {
+      return res.status(404).json({
+        message: "No residents found for the specified residency."
+      });
+    }
+
+    return res.status(200).json({
+      message: "Residents fetched successfully",
+      residents,
+    });
+  } catch (error) {
+    console.error("Error fetching residents:", error);
+    return res.status(500).json({
+      message: "Error fetching residents",
+      error: error.message,
+    });
+  }
+};
+

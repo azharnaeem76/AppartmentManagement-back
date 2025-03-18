@@ -20,6 +20,12 @@ const {
   deleteHouse,
   getFlatsByResidency,
   getUnionContacts,
+  createAnnouncement,
+  getAnnouncementsByResidencyId,
+  createUnionMember,
+  getUnionMembersByResidency,
+  getAllResidents,
+  getResidentsByResidencyId,
 } = require("../controllers/superadmincontroller"); 
 const router = express.Router();
 
@@ -57,4 +63,15 @@ router.delete("/house/:houseId", deleteHouse); // Delete house by ID
 
 
 router.get("/unionMembers/:residencyId",getUnionContacts)
+router.post("/super/createAnnouncement",createAnnouncement)
+router.get("/super/getAnnouncement/:residency_id",getAnnouncementsByResidencyId)
+
+
+router.post("/super/createUnionMembers",createUnionMember)
+router.get("/super/getUnionMembers/:residency_id",getUnionMembersByResidency)
+
+router.get("/allResidents",getAllResidents)
+router.get("/allResidents/:residency_id",getResidentsByResidencyId)
+
+
 module.exports = router;
