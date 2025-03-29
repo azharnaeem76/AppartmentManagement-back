@@ -785,52 +785,48 @@ exports.getAllResidents = async (req, res) => {
 };
 
 
-
-
 exports.getResidentsByResidencyId = async (req, res) => {
   const { residency_id } = req.params; // Get the residency_id from request params
+  console.log(residency_id, "Received residency_id");
 
   try {
-    // Fetch residents based on residency_id via the block association
+    // Step 1: Fetch all residents with their associated flat and block in one query
     const residents = await Resident.findAll({
       include: [
         {
           model: Flat,
-          as: "flat", 
+          as: "flat",
           include: [
             {
               model: Block,
               as: "block",
-              where: { residency_id }, 
-              include: [
-                {
-                  model: Residency,
-                  as: "residency",
-                  where: { id: residency_id },
-                }
-              ]
+              where: { residency_id }, // Filter by residency_id at block level
             }
           ]
         }
       ]
     });
 
-    // If no residents are found for the given residency_id
-    if (residents.length === 0) {
+    console.log(residents, "Fetched residents");
+
+    // Step 2: If no residents are found, return 404
+    if (!residents || residents.length === 0) {
       return res.status(404).json({
         message: "No residents found for the specified residency."
       });
     }
 
+    // Step 3: Return the residents
     return res.status(200).json({
       message: "Residents fetched successfully",
-      residents,
+      residents
     });
+
   } catch (error) {
     console.error("Error fetching residents:", error);
     return res.status(500).json({
       message: "Error fetching residents",
-      error: error.message,
+      error: error.message
     });
   }
 };
