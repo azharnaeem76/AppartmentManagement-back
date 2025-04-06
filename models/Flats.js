@@ -62,7 +62,12 @@ module.exports = (sequelize, Sequelize, schema) => {
       as: "resident",
       onDelete: "CASCADE",
     });
+    Flat.hasMany(models.Maintenance, {
+      foreignKey: "flat_id",
+      as: "maintenances",
+    });
   };
+  
 
   return Flat;
 };

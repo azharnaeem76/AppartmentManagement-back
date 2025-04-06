@@ -4,7 +4,6 @@ module.exports = (sequelize, Sequelize, schema) => {
         {
             title: {
                 type: Sequelize.STRING,
-                allowNull: false,
             },
             invoice_number: {
                 type: Sequelize.STRING,

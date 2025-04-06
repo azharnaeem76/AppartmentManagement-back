@@ -51,6 +51,12 @@ module.exports = (sequelize, Sequelize) => {
         allowNull: false,
         comment: "The ID of the super admin who created this residency.",
       },
+      funds: {
+        type: Sequelize.FLOAT,
+        allowNull: false,
+        defaultValue: 0, // Default value for funds is 0
+        comment: "Total funds available for the residency/society.",
+      },
     });
   
     Residency.associate = (models) => {

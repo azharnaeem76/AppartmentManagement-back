@@ -17,15 +17,47 @@ module.exports = (sequelize, Sequelize, schema) => {
         allowNull: false,
         comment: "Amount of maintenance for the specified month/year.",
       },
+      residency_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: "residencies",
+          key: "id",
+        },
+        comment: "The residency this maintenance record belongs to.",
+      },
+      block_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: "blocks",
+          key: "id",
+        },
+      },
+      flat_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: "flats",
+          key: "id",
+        },
+      },
+      resident_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: "residents",
+          key: "id",
+        },
+      },
     },
     {
-      schema: schema, // Ensures schema is applied to the table
+      schema,
       tableName: "maintenances",
-      timestamps: true, // Enables createdAt & updatedAt
+      timestamps: true,
     }
   );
 
-  // Define associations inside models/index.js
   Maintenance.associate = (models) => {
     Maintenance.belongsTo(models.Residency, {
       foreignKey: "residency_id",
