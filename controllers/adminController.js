@@ -6,8 +6,9 @@ const Flat = db.Flat;
 const Resident= db.Resident
 const Maintenance = db.Maintenance
 const Expense =db.Expense;
-const Bill = db.Bill
-const Employee = db.Employee
+const Bill = db.Bill;
+const Employee = db.Employee;
+const Fund = db.Funds;
 exports.getResidencyByAdmin = async (req, res) => {
   try {
     const adminId = req.userId;
@@ -593,51 +594,98 @@ exports.getExpensesByResidencyId = async (req, res) => {
       where: { residency_id }
     });
 
-    // If no blocks are found for the given residency_id, return error
     if (!blocks || blocks.length === 0) {
       return res.status(404).json({
         message: `No blocks found for residency ID ${residency_id}.`,
       });
     }
 
-    // Fetch expenses related to the blocks (using block_id)
+    const blockIds = blocks.map(block => block.id);
+
+    // Fetch expenses from Expense table
     const expensesFromExpenseTable = await Expense.findAll({
-      where: {
-        block_id: blocks.map(block => block.id)
-      },
+      where: { block_id: blockIds },
     });
 
-    // Fetch bills related to the residency (using residency_id)
+    // Fetch expenses from Bill table
     const expensesFromBillTable = await Bill.findAll({
-      where: {
-        residency_id: residency_id,  // Filter bills by residency_id
-      },
+      where: { residency_id },
     });
 
-    // Combine the results from both tables
-    const combinedExpenses = [
-      ...expensesFromExpenseTable,
-      ...expensesFromBillTable,
+    // Fetch funds
+    const funds = await Fund.findAll({
+      where: { residency_id },
+    });
+
+    // Fetch employees for salary expense
+    const employees = await Employee.findAll({
+      where: { residency_id },
+    });
+
+    // Normalize all into a common format
+    const normalizedExpenses = [
+      ...expensesFromExpenseTable.map(exp => ({
+        source: "expense",
+        id: exp.id,
+        title: exp.title,
+        description: null,
+        amount: exp.amount,
+        status: exp.status,
+        type: exp.type,
+        due_date: exp.due_date,
+        invoice_number: exp.invoice_number,
+        block_id: exp.block_id,
+      })),
+      ...expensesFromBillTable.map(bill => ({
+        source: "bill",
+        id: bill.id,
+        title: bill.title,
+        description: bill.description || null,
+        amount: bill.amount,
+        status: bill.status,
+        due_date: bill.due_date,
+        invoice_number: bill.invoice_number,
+        residency_id: bill.residency_id,
+      })),
+      ...funds.map(fund => ({
+        source: "fund",
+        id: fund.id,
+        title: fund.title,
+        description: fund.description || null,
+        amount: fund.amount,
+        residency_id: fund.residency_id,
+      })),
+      ...employees.map(emp => ({
+        source: "salary",
+        id: emp.id,
+        title: `Salary - ${emp.name}`,
+        description: `Monthly salary for ${emp.role}`,
+        amount: emp.salary,
+        residency_id: emp.residency_id,
+        status:'paid'
+      })),
     ];
 
-    if (combinedExpenses.length === 0) {
+    if (normalizedExpenses.length === 0) {
       return res.status(404).json({
-        message: `No expenses found for residency ID ${residency_id}.`,
+        message: `No expenses, funds, or salaries found for residency ID ${residency_id}.`,
       });
     }
 
     return res.status(200).json({
-      message: "Expenses fetched successfully for Residency ID.",
-      data: combinedExpenses,
+      message: "Expenses, funds, and salaries fetched successfully for Residency ID.",
+      data: normalizedExpenses,
     });
   } catch (error) {
     console.error(error);
     return res.status(500).json({
-      message: "Error fetching expenses by Residency ID.",
+      message: "Error fetching expenses and funds by Residency ID.",
       error: error.message,
     });
   }
 };
+
+
 
 
 // Get expenses using Block ID (fetching from both Expense and Bill tables)
@@ -873,35 +921,77 @@ exports.addBill = async (req, res) => {
 
 
 // Controller function to add funds to a residency
+// exports.addFundsToResidency = async (req, res) => {
+//   try {
+//     const { residency_id, amount } = req.body; // Assuming the request body contains `residency_id` and `amount`
+
+//     // Validate the input
+//     if (!residency_id || !amount) {
+//       return res.status(400).json({ message: 'Residency ID and amount are required.' });
+//     }
+
+//     if (typeof amount !== 'number' || amount <= 0) {
+//       return res.status(400).json({ message: 'Amount must be a positive number.' });
+//     }
+
+//     // Find the residency by ID
+//     const residency = await Residency.findOne({ where: { id: residency_id } });
+
+//     if (!residency) {
+//       return res.status(404).json({ message: 'Residency not found.' });
+//     }
+
+//     // Add the funds to the current amount
+//     residency.funds += amount;
+
+//     // Save the updated residency record
+//     await residency.save();
+
+//     // Send the updated residency details back in the response
+//     return res.status(200).json({
+//       message: 'Funds added successfully.',
+//       residency: {
+//         id: residency.id,
+//         funds: residency.funds,
+//       },
+//     });
+//   } catch (error) {
+//     console.error('Error adding funds:', error);
+//     return res.status(500).json({ message: 'An error occurred while adding funds.' });
+//   }
+// };
+
+
 exports.addFundsToResidency = async (req, res) => {
   try {
-    const { residency_id, amount } = req.body; // Assuming the request body contains `residency_id` and `amount`
+    const { residency_id, amount, title, description } = req.body;
 
-    // Validate the input
-    if (!residency_id || !amount) {
-      return res.status(400).json({ message: 'Residency ID and amount are required.' });
+    if (!residency_id || !amount || !title) {
+      return res.status(400).json({ message: 'Residency ID, title, and amount are required.' });
     }
 
     if (typeof amount !== 'number' || amount <= 0) {
       return res.status(400).json({ message: 'Amount must be a positive number.' });
     }
 
-    // Find the residency by ID
     const residency = await Residency.findOne({ where: { id: residency_id } });
 
     if (!residency) {
       return res.status(404).json({ message: 'Residency not found.' });
     }
 
-    // Add the funds to the current amount
     residency.funds += amount;
-
-    // Save the updated residency record
     await residency.save();
 
-    // Send the updated residency details back in the response
+    await Fund.create({
+      title,
+      description,
+      amount,
+      residency_id,
+    });
+
     return res.status(200).json({
-      message: 'Funds added successfully.',
+      message: 'Funds added and logged successfully.',
       residency: {
         id: residency.id,
         funds: residency.funds,
@@ -912,6 +1002,7 @@ exports.addFundsToResidency = async (req, res) => {
     return res.status(500).json({ message: 'An error occurred while adding funds.' });
   }
 };
+
 
 
 
@@ -946,7 +1037,7 @@ exports.getFundsForResidency = async (req, res) => {
 // Function to add a new employee
 exports.addEmployee = async (req, res) => {
   try {
-    const { name, email, phone_number, role, residency_id } = req.body;
+    const { name, email, phone_number, role, residency_id, salary } = req.body;
 
     // Validate the required fields
     if (!name || !email || !role || !residency_id) {
@@ -968,6 +1059,7 @@ exports.addEmployee = async (req, res) => {
       phone_number,
       role,
       residency_id,
+      salary
     });
 
     // Return the newly created employee

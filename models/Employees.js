@@ -20,6 +20,12 @@ module.exports = (sequelize, Sequelize, schema) => {
         allowNull: false,
         comment: "Role of the employee within the residency (e.g., manager, caretaker, etc.)",
       },
+      salary: {
+        type: Sequelize.FLOAT,
+        allowNull: false,
+        comment: "Monthly salary of the employee",
+        defaultValue: 0,
+      },
       residency_id: {
         type: Sequelize.INTEGER,
         allowNull: false,

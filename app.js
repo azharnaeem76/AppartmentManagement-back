@@ -28,12 +28,13 @@ app.use(morgan("combined"));
 app.use(requestLogger);
 
 
-const superAdminAuth = require('./routes/auth.route')
-const superAdminRoutes = require('./routes/superAdmin')
-const adminRoutes = require('./routes/adminRoutes')
-const complaintRoutes = require('./routes/complaintRoutes')
-const vehicleRoutes = require('./routes/vehicleRoutes')
-const residentRoutes = require('./routes/residentRoutes')
+const superAdminAuth = require('./routes/auth.route');
+const superAdminRoutes = require('./routes/superAdmin');
+const adminRoutes = require('./routes/adminRoutes');
+const complaintRoutes = require('./routes/complaintRoutes');
+const vehicleRoutes = require('./routes/vehicleRoutes');
+const residentRoutes = require('./routes/residentRoutes');
+const commentRoutes = require('./routes/CommentRoutes');
 
 app.use('/api/auth/',superAdminAuth)
 app.use('/api/superAdmin',superAdminRoutes)
@@ -41,6 +42,7 @@ app.use('/api/admin',adminRoutes)
 app.use('/api/complaints', complaintRoutes)
 app.use('/api/vehicles', vehicleRoutes)
 app.use('/api/resident', residentRoutes)
+app.use('/api/comments',commentRoutes)
 
 // app.use(session({
 //     secret: 'my-secret0here',

@@ -40,6 +40,8 @@ db.UnionMember = require("./UnionMember")(sequelize, Sequelize);
 db.Vehicle = require("./Vehicle")(sequelize, Sequelize);
 db.Bill = require("./Bills")(sequelize, Sequelize);
 db.Expense = require("./Expenses")(sequelize, Sequelize);
+db.Funds = require("./Funds")(sequelize, Sequelize);
+db.Comments = require("./Comments")(sequelize, Sequelize);
 // Set up associations without schema for now
 Object.keys(db).forEach((modelName) => {
   if (db[modelName].associate) {
