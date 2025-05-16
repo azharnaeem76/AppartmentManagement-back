@@ -68,12 +68,44 @@ exports.createResidency = async (req, res) => {
       }
     }
 
-    return res.status(201).json({ message: "Residency created successfully", residency });
+    // Step 3: Create admin with dummy email and password
+    const adminEmail = generateRandomEmail(); // e.g., admin123@dummy.com
+    const adminPassword = generateRandomPassword(); // random 8-char string with special chars
+    const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(adminPassword, salt);
+    const newAdmin = await Admin.create({
+      name: 'Admin',
+      email: adminEmail,
+      password: hashedPassword, 
+      permissions: {},
+      residency_id: residency.id
+    });
+
+    let adminData ={
+      email:adminEmail,
+      password: adminPassword
+    }
+    return res.status(201).json({ message: "Residency created successfully", data:{residency:residency, adminData} });
   } catch (error) {
     console.error("Error creating residency:", error);
     return res.status(500).json({ message: "Error creating residency", error: error.message });
   }
 };
+
+
+function generateRandomPassword() {
+  const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()';
+  let password = '';
+  for (let i = 0; i < 8; i++) {
+    password += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+  return password;
+}
+
+function generateRandomEmail() {
+  const randomNum = Math.floor(Math.random() * 10000);
+  return `admin${randomNum}@dummy.com`;
+}
 
 
 
