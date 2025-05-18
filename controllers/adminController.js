@@ -18,15 +18,15 @@ exports.getResidencyByAdmin = async (req, res) => {
       where: { id: adminId },
       include: {
         model: Residency,
-        as: "residency", // Use the alias defined in the association
+        as: "residency",
       },
     });
 
     if (!admin || !admin.residency) {
-      return res.status(404).json({ message: "Residency not found for this admin" });
+      return res.status(200).json([]); // Return empty array instead of 404
     }
 
-    res.status(200).json(admin.residency);
+    res.status(200).json([admin.residency]); // Wrap in array
   } catch (error) {
     console.error("Error fetching residency:", error);
     res.status(500).json({ message: "Internal server error" });
