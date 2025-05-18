@@ -1,6 +1,6 @@
 const express = require("express");
 const { authorizeRoute } = require("../middlewares/Authentication"); // Import the auth middleware
-const { getResidencyByAdmin, getAdminResidentsByResidencyId, getResidentByFlatId, getMaintenanceByResidencyId, addMaintenance, getMaintenanceByResidencyIdAndFlatId, getMaintenanceByBlockAndFlat, getMaintenanceByBlock, getDefaultersByResidencyId, getExpensesByResidencyId, getExpensesByBlockAndResidencyId, addExpense, addBill, addFundsToResidency, getFundsForResidency, addEmployee, getEmployeesByResidency } = require("../controllers/adminController");
+const { getResidencyByAdmin, getAdminResidentsByResidencyId, getResidentByFlatId, getMaintenanceByResidencyId, addMaintenance, getMaintenanceByResidencyIdAndFlatId, getMaintenanceByBlockAndFlat, getMaintenanceByBlock, getDefaultersByResidencyId, getExpensesByResidencyId, getExpensesByBlockAndResidencyId, addExpense, addBill, addFundsToResidency, getFundsForResidency, addEmployee, getEmployeesByResidency, getResidencyByAdminArray } = require("../controllers/adminController");
 const { getFlatsByResidency, getHouses, getBlocks, createAnnouncement, getAnnouncementsByResidencyId } = require("../controllers/superadmincontroller");
 
 const router = express.Router();
@@ -11,6 +11,7 @@ router.use(authorizeRoute("admin"));
 
 
 router.get("/residency", getResidencyByAdmin)
+router.get("/residencyArray", getResidencyByAdminArray)
 router.get("/residents/:residency_id", getAdminResidentsByResidencyId)
 router.get("/flatsByResidency/:residencyId/flats", getFlatsByResidency); 
 router.get("/residency/:residencyId/houses", getHouses);

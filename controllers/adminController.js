@@ -18,6 +18,30 @@ exports.getResidencyByAdmin = async (req, res) => {
       where: { id: adminId },
       include: {
         model: Residency,
+        as: "residency", // Use the alias defined in the association
+      },
+    });
+
+    if (!admin || !admin.residency) {
+      return res.status(404).json({ message: "Residency not found for this admin" });
+    }
+
+    res.status(200).json(admin.residency);
+  } catch (error) {
+    console.error("Error fetching residency:", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+};
+
+exports.getResidencyByAdminArray = async (req, res) => {
+  try {
+    const adminId = req.userId;
+
+    // Find the admin and include the associated residency
+    const admin = await Admin.findOne({
+      where: { id: adminId },
+      include: {
+        model: Residency,
         as: "residency",
       },
     });
@@ -32,7 +56,6 @@ exports.getResidencyByAdmin = async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };
-
 exports.getAdminResidentsByResidencyId = async (req, res) => {
   const { residency_id } = req.params; // Get the residency_id from request params
   console.log(residency_id, "Received residency_id");
