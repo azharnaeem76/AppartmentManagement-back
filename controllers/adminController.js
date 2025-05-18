@@ -44,16 +44,19 @@ exports.getAdminResidentsByResidencyId = async (req, res) => {
         {
           model: Flat,
           as: "flat",
+          required: true, 
           include: [
             {
               model: Block,
               as: "block",
-              where: { residency_id }, // Filter by residency_id at block level
+              required: true, 
+              where: { residency_id },
             }
           ]
         }
       ]
     });
+    
 
     console.log(residents, "Fetched residents");
 
