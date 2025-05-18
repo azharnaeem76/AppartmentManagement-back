@@ -62,8 +62,9 @@ exports.getAdminResidentsByResidencyId = async (req, res) => {
 
     // Step 2: If no residents are found, return 404
     if (!residents || residents.length === 0) {
-      return res.status(404).json({
-        message: "No residents found for the specified residency."
+      return res.status(200).json({
+        message: "No residents found for the specified residency.",
+        residents
       });
     }
 
